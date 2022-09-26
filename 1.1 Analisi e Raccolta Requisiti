@@ -2,9 +2,14 @@
 
 ### Caso d'uso: qual è il marchio più venduto? 
 
-clientela
+## Descrizione del Caso di Studio Scelto
 
-prodotti (venduto; magazzino)
+Si vuole realizzare un'analisi per un negozio fisico di scarpe, che ha anche un ecommerce.
+Si realizza un Database per tenere conto le statistiche di vendita correnti e future. Si possono integrare anche le vendite passate. 
+
+Si vuole tener conto anche della clientela. Le iscrizioni alla lista possono avvenire su Web o nel Negozio.
+Il Cliente ci deve fornire (se online): la password, la mail, numero di telefono, la data di nascita, il sesso, nome e cognome, e geolocalizzazione.
+Il Cliente ci può fornire (se in negozio): mail, numero di telefono, la data di nascita, il sesso, nome e cognome, e geolocalizzazione
 
 
 ## Data Engineer
@@ -13,7 +18,8 @@ Creazione di un database relazionale (DB) con mySQL. I dati necessari sono strut
 Tabella 1: id, Marchio (stringa), Tipologia (stringa), Codice Prodotto (numero)
 Tabella 2: id, Codice Prodotto (numero), Taglia (stringa), Quantità Comprata/Venduta (numero), Prezzo Acquisto(numero), Prezzo Vendita (numero), Data (data)
 Tabella 3: id, Codice Cliente (numero), Password (stringa)
-Tabella 4: id, Codice Cliente (numero), Nome (stringa), Cognome (stringa), Numero di Telefono (numero), Mail (stringa), Data di Nascita (data), Sesso (boolean), Geolocalizzazione (stringa), Data Iscrizione (data)
+Tabella 4: id, Codice Cliente (numero), Nome (stringa), Cognome (stringa), Numero di Telefono (numero), Mail (stringa), Data di Nascita (data), Sesso (boolean),
+  Geolocalizzazione (stringa), Data Iscrizione (data)
 Per questioni di GDPR, le password devono essere criptate. Alcune colonne della Tabella 4 possono contenere valori Null (come per Geolocalizzazione). 
 Questo perché con gli acquisti online si deve chiedere la residenza, ma nel caso dell'iscrizione in una lista clienti in negozio fisico, il cliente potrebbe rifiutarsi di darla. 
 Utilizzo di Python per scrivere sul DB, tramite una interfaccia Web-App.
@@ -31,6 +37,9 @@ Analisi della Seasonalità (Mensile, Quadrimestrale, Annuale) con fine di compre
 - Tipologia di prodotto "Codice Prodotto * Quantità Venduta" (Vendite per Tipologia)
 - Qual è il prodotto più venduto?
 Tutti i dati sono strutturati perchè ricavati dal Database.
+
+Le analisi permettono di comprendere le vendite attuali e decidere i nuovi acquisti.
+
 
 ## Data Scientist
 
@@ -50,6 +59,10 @@ Analisi Predittive:
 - Bot che faccia la media delle recensioni sul periodo (Engaging)
 - Statistica su quanti nuovi clienti avremo sul periodo futuro (Nuovi Clienti)
 Per le Opinioni dei Clienti, il Data Scientist ha a che fare con dati non strutturati (le recensioni web). Web-scraping dal sito ecommerce/Google. 
+
+Le analisi permettono di comprendere le vendite attuali e decidere i nuovi acquisti.
+La Storia che se ne può ricavare è l'andamento storico delle vendite per tipologia (es. le vendite di Luis Vuitton nell'area del negozio negli ultimi 10 anni?). 
+
 
 ## Glossario
 
