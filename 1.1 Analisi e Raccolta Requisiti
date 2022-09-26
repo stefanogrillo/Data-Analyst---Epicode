@@ -1,0 +1,21 @@
+# Negozio di Scarpe
+
+### Caso d'uso: qual è il marchio più venduto? 
+
+clientela
+
+prodotti (venduto; magazzino)
+
+
+## Data Engineer
+
+Creazione di un database relazionale (DB) con mySQL. La finalità è la creazione di uno stock per gestire i prodotti.
+Tabella 1: id, Marchio, Tipologia, Codice Prodotto
+Tabella 2: id, Codice Prodotto, Taglia, Quantità Comprata, Quantità Venduta, Prezzo Acquisto, Prezzo Vendita 
+
+## Data Analyst
+
+## Data Scientist
+
+Marchio: ente produttrice dell'oggetto da vendere
+Tipologia: categoria di prodotto (T-shirt, felpa)
