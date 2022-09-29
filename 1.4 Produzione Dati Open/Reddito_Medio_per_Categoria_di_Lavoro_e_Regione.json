@@ -1,0 +1,204 @@
+{
+    "regioni":[
+        {
+            "regione":"abruzzo",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"basilicata",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"calabria",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"campania",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"emilia-romagna",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"friuli-venezia-giulia",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"lazio",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"liguria",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"lombardia",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"marche",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"molise",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"piemonte",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"puglia",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"sardegna",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"sicilia",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"toscana",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"trentino-alto-adige",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"umbria",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"valle-d-aosta",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        },
+        {
+            "regione":"veneto",
+            "stipendi":[
+                {"categoria":"agricoltura", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"commercio", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"edilizia", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"informatica", "lordo":["500", "2000"], "netto":["300", "1200"]},
+                {"categoria":"ristorazione", "lordo":["500", "2000"], "netto":["300", "1200"]}
+            ]
+        }
+    ]
+}
