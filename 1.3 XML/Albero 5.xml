@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes'?>
+<lettera>
+	<mittente>Stefano Sergio</mittente>
+	<destinatario>Epicode</destinatario>
+	<data>
+		<anno>2022</anno>
+		<mese>09</mese>
+		<giorno>28</giorno>
+	</data> 
+ 	<corpo>Buon pomeriggio, come va?</corpo>
+ 	<firma>Grillo Cristiano</firma>
+</lettera>

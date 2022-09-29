@@ -1,0 +1,22 @@
+<phonebook>
+	<company>
+		<cname>Microsoft</cname>
+		<exchange>09-999000</exchange>
+		<president name="Bill_Gates">
+			<extension>09-9990011</extension>
+		</president>
+		<secretary name="Katharine_Finch">
+			<extension>09-9990012</extension>
+		</secretary>
+	</company>
+	<company>
+		<cname>Oracle</cname>
+		<exchange>09-888000</exchange>
+		<president name="Larry_Ellison">
+			<extension>09-8880011</extension>
+		</president>
+		<secretary name="Helen_Calhoun">
+			<extension>09-8880012</extension>
+		</secretary>
+	</company>
+</phonebook>

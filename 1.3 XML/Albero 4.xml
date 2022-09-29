@@ -1,0 +1,34 @@
+<cd seriale="B6B41B" disc-lenght='36:55'>
+	<informazioni>
+		<genere>Rock</genere>
+		<artista>Maneskin</artista>
+		<casa_discografica>Sony Music</casa_discografica>
+		<anno_di_pubblicazione>2021</anno_di_pubblicazione>
+	</informazioni>
+	<canzoni>
+		<traccia>
+			<numero>1</numero>
+			<titolo>Zitti e Buoni</titolo>
+			<durata>
+				<minuti>3</minuti>
+				<secondi>18</secondi>
+			</durata>
+		</traccia>
+		<traccia>
+			<numero>2</numero>
+			<titolo>Coraline</titolo>
+			<durata>
+				<minuti>5</minuti>
+				<secondi>00</secondi>
+			</durata>
+		</traccia>
+		<traccia>
+			<numero>3</numero>
+			<titolo>Lividi sui Gomiti</titolo>
+			<durata>
+				<minuti>2</minuti>
+				<secondi>45</secondi>
+			</durata>
+		</traccia>
+	</canzoni>
+</cd>
