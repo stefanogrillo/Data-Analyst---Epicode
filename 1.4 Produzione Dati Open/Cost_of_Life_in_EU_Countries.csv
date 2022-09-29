@@ -1,0 +1,30 @@
+nation,cost_of_rent,cost_of_life,tot_cost,notes
+austria,700,500,1200,"on average, except for Vienna"
+belgium,700,500,1200,
+bulgaria,400,300,900,
+croatia,400,300,900,
+cyprus,400,300,900,
+czech_republic,400,300,900,"note the differences with slovakia
+after the separation, they remained similar"
+denmark,700,500,1200,
+estonia,700,500,1200,
+finland,700,500,1200,
+france,700,500,1200,
+germany,700,500,1200,
+greece,400,300,900,
+hungary,300,300,800,"the ""cheapest"" in EU" 
+ireland,700,500,1200,
+italy,700,500,1200,
+latvia,400,300,900,
+lithuania,400,300,900,
+luxembourg,700,500,1200,
+malta,400,300,900,
+netherlands,800,700,1500,"the ""most expensive"" in EU" 
+poland,400,300,900,
+portugal,400,300,900,
+romania,400,300,900,
+slovakia,400,300,900,"note the differences with czech_republic
+after the separation, they remained similar"
+slovenia,400,300,900,
+spain,700,500,1200,
+sweden,700,500,1200,
