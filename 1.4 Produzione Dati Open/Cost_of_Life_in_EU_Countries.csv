@@ -28,3 +28,4 @@ after the separation, they remained similar"
 slovenia,400,300,900,
 spain,700,500,1200,
 sweden,700,500,1200,
+"please note,","that the new line \n","is only visible","in the raw version","of this .csv"
