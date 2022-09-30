@@ -1,31 +1,31 @@
-<metadata>
-     <dc:publisher>Bundeszentrale für politische Bildung</dc:publisher>
-     <dc:title>Durchschnittseinkommen nach Berufskategorie und Länder 2021</dc:title>
-     <dcterms:license>CC BY-SA</dcterms:license>
-     <dc:language>English</dc:language>
-     <dcterms:issued>2022-03-01 12:22:09.0</dcterms:issued>
-     <dc:source>Bundeszentrale für politische Bildung</dc:source>
-     <keywords>sector;region;brutto;netto</keywords>
-     <facets>
-         <argument>
-             <dc:subject>salary.brutto</dc:subject>
-             <dc:subject>salary.netto</dc:subject>
-         </argument>
-         <period>
-             <dc:temporal>2021-</dc:temporal>
-         </period>
-         <format>
-             <dc:format>CSV</dc:format>
-             <dc:format>JSON</dc:format>
-             <dc:format>XLS</dc:format>
-             <dc:format>XML</dc:format>
-         </format>
-         <type>
-             <dc:type>Schema</dc:type>
-         </type>
-     </facets>
-</metadata>
 <sector>
+	<metadata>
+	     <dc:publisher>Bundeszentrale für politische Bildung</dc:publisher>
+	     <dc:title>Durchschnittseinkommen nach Berufskategorie und Länder 2021</dc:title>
+	     <dcterms:license>CC BY-SA</dcterms:license>
+	     <dc:language>English</dc:language>
+	     <dcterms:issued>2022-03-01 12:22:09.0</dcterms:issued>
+	     <dc:source>Bundeszentrale für politische Bildung</dc:source>
+	     <keywords>sector;region;brutto;netto</keywords>
+	     <facets>
+		 <argument>
+		     <dc:subject>salary.brutto</dc:subject>
+		     <dc:subject>salary.netto</dc:subject>
+		 </argument>
+		 <period>
+		     <dc:temporal>2021-</dc:temporal>
+		 </period>
+		 <format>
+		     <dc:format>CSV</dc:format>
+		     <dc:format>JSON</dc:format>
+		     <dc:format>XLS</dc:format>
+		     <dc:format>XML</dc:format>
+		 </format>
+		 <type>
+		     <dc:type>Schema</dc:type>
+		 </type>
+	     </facets>
+	</metadata>
 	<agriculture data="public">
 		<Baden-Württemberg>
 			<brutto></brutto>
