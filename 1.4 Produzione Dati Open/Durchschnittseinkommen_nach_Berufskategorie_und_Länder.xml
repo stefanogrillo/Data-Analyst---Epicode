@@ -1,728 +1,755 @@
-<settore>
-	<agricoltura riferimento="pubblico">
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+<metadata>
+     <dc:publisher>Bundeszentrale für politische Bildung</dc:publisher>
+     <dc:title>Durchschnittseinkommen nach Berufskategorie und Länder 2021</dc:title>
+     <dcterms:license>CC BY-SA</dcterms:license>
+     <dc:language>English</dc:language>
+     <dcterms:issued>2022-03-01 12:22:09.0</dcterms:issued>
+     <dc:source>Bundeszentrale für politische Bildung</dc:source>
+     <keywords>sector;region;brutto;netto</keywords>
+     <facets>
+         <argument>
+             <dc:subject>salary.brutto</dc:subject>
+             <dc:subject>salary.netto</dc:subject>
+         </argument>
+         <period>
+             <dc:temporal>2021-</dc:temporal>
+         </period>
+         <format>
+             <dc:format>CSV</dc:format>
+             <dc:format>JSON</dc:format>
+             <dc:format>XLS</dc:format>
+             <dc:format>XML</dc:format>
+         </format>
+         <type>
+             <dc:type>Schema</dc:type>
+         </type>
+     </facets>
+</metadata>
+<sector>
+	<agriculture data="public">
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</agricoltura>
-	<amministrazione>
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</agriculture>
+	<amministration>
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</amministrazione>
-	<chimica>
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</amministration>
+	<business>
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</chimica>
-	<commercio>
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</business>
+	<chemical>
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</commercio>
-	<edilizia>
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</chemical>
+	<construction>
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</edilizia>
-	<finanza>
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</construction>
+	<finance>
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</finanza>
-	<informatica riferimento="pubblico">
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</finance>
+	<IT data="public">
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</informatica>
-	<ristorazione riferimento="pubblico">		
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</IT>
+	<restourants data="public">		
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</ristorazione>
-	<spaziale riferimento="privato">
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</restourants>
+	<space data="private">
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</spaziale>
-	<telecomunicazioni riferimento="privato">
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</space>
+	<telecommunications data="private">
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</telecomunicazioni>
-	<turismo>
-		<Amburgo>
-			<brutto></brutto>
-			<netto></netto>
-		</Amburgo>
-		<Assia>
-			<brutto></brutto>
-			<netto></netto>
-		</Assia>
+		</Thüringen>
+	</telecommunications>
+	<tourism>
 		<Baden-Württemberg>
 			<brutto></brutto>
 			<netto></netto>
 		</Baden-Württemberg>
-		<Bassa Sassonia>
+		<Bayern>
 			<brutto></brutto>
 			<netto></netto>
-		</Bassa Sassonia>
-		<Baviera>
+		</Bayern>
+		<Berlin>
 			<brutto></brutto>
 			<netto></netto>
-		</Baviera>
-		<Berlino>
+		</Berlin>
+		<Brandenburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Berlino>
-		<Brandeburgo>
+		</Brandenburg>
+		<Bremen>
 			<brutto></brutto>
 			<netto></netto>
-		</Brandeburgo>
-		<Brema>
+		</Bremen>
+		<Hamburg>
 			<brutto></brutto>
 			<netto></netto>
-		</Brema>
-		<Meclemburgo-Pomerania Anteriore>
+		</Hamburg>
+		<Hessen>
 			<brutto></brutto>
 			<netto></netto>
-		</Meclemburgo-Pomerania Anteriore>
-		<Renania-Palatinato>
+		</Hessen>
+		<Mecklenburg-Vorpommern>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania-Palatinato>
-		<Renania Settentrionale-Vestfalia>
+		</Mecklenburg-Vorpommern>	
+		<Niedersachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Renania Settentrionale-Vestfalia>
+		</Niedersachsen>
+		<Nordrhein-Westfalena>
+			<brutto></brutto>
+			<netto></netto>
+		</Nordrhein-Westfalen>
+		<Rheinland-Pfalz>
+			<brutto></brutto>
+			<netto></netto>
+		</Rheinland-Pfalz>
 		<Saarland>
 			<brutto></brutto>
 			<netto></netto>
 		</Saarland>
-		<Sassonia>
+		<Sachsen>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia>
-		<Sassonia-Anhalt>
+		</Sachsen>
+		<Sachsen-Anhalt>
 			<brutto></brutto>
 			<netto></netto>
-		</Sassonia-Anhalt>
+		</Sachsen-Anhalt>
 		<Schleswig-Holstein>
 			<brutto></brutto>
 			<netto></netto>
 		</Schleswig-Holstein>
-		<Turingia>
+		<Thüringen>
 			<brutto></brutto>
 			<netto></netto>
-		</Turingia>
-	</turismo>
-</settore>
+		</Thüringen>
+	</tourism>
+</sector>
