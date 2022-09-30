@@ -1,5 +1,4 @@
 nation,cost_of_rent,cost_of_life,tot_cost,notes,approved
-"please note,","that the new line \n","for czech_republic and slovakia","is only visible","in the raw version of this .csv,","due to GitHub Preview"
 austria,700,500,1200,"on average, except for Vienna",true
 belgium,700,500,1200,,true
 bulgaria,400,300,900,,true
