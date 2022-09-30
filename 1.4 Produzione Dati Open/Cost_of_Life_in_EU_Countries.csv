@@ -1,31 +1,29 @@
-nation,cost_of_rent,cost_of_life,tot_cost,notes
-"please note,","that the new line \n","for czech_republic and slovakia","is only visible","in the raw version of this .csv, due to GitHub Preview"
-austria,700,500,1200,"on average, except for Vienna"
-belgium,700,500,1200,
-bulgaria,400,300,900,
-croatia,400,300,900,
-cyprus,400,300,900,
-czech_republic,400,300,900,"note the differences with slovakia
-after the separation, they remained similar"
-denmark,700,500,1200,
-estonia,700,500,1200,
-finland,700,500,1200,
-france,700,500,1200,
-germany,700,500,1200,
-greece,400,300,900,
-hungary,300,300,800,"the ""cheapest"" in EU"
-ireland,700,500,1200,
-italy,700,500,1200,
-latvia,400,300,900,
-lithuania,400,300,900,
-luxembourg,700,500,1200,
-malta,400,300,900,
-netherlands,800,700,1500,"the ""most expensive"" in EU"
-poland,400,300,900,
-portugal,400,300,900,
-romania,400,300,900,
-slovakia,400,300,900,"note the differences with czech_republic
-after the separation, they remained similar"
-slovenia,400,300,900,
-spain,700,500,1200,
-sweden,700,500,1200,
+nation,cost_of_rent,cost_of_life,tot_cost,notes,approved
+"please note,","that the new line \n","for czech_republic and slovakia","is only visible","in the raw version of this .csv,","due to GitHub Preview"
+austria,700,500,1200,"on average, except for Vienna",true
+belgium,700,500,1200,,true
+bulgaria,400,300,900,,true
+croatia,400,300,900,,true
+cyprus,400,300,900,,true
+czech_republic,400,300,900,"note the differences with slovakia \n after the separation, they remained similar",true
+denmark,700,500,1200,,true
+estonia,700,500,1200,,true
+finland,700,500,1200,,true
+france,700,500,1200,,true
+germany,700,500,1200,,true
+greece,400,300,900,,true
+hungary,300,300,800,"the ""cheapest"" in EU",true
+ireland,700,500,1200,,true
+italy,700,500,1200,,true
+latvia,400,300,900,,true
+lithuania,400,300,900,,true
+luxembourg,700,500,1200,,true
+malta,400,300,900,,true
+netherlands,800,700,1500,"the ""most expensive"" in EU",true
+poland,400,300,900,,true
+portugal,400,300,900,,true
+romania,400,300,900,,true
+slovakia,400,300,900,"note the differences with czech_republic \n after the separation, they remained similar",true
+slovenia,400,300,900,,true
+spain,700,500,1200,,true
+sweden,700,500,1200,,true
