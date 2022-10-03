@@ -3,10 +3,10 @@ def main():
     while True:
         a = float(input("Base: "))
         if a < 0:
-            print("NOoO")
+            print("NO")
             continue
         elif a != int(a):
-            print("NO")
+            print("NOO")
             continue
         else:
             break
@@ -15,10 +15,10 @@ def main():
     while True:
         b = float(input("Power: "))
         if b < 0:
-            print("NOoO")
+            print("NO")
             continue
         elif b != int(b):
-            print("NO")
+            print("NOO")
             continue
         else:
             break
