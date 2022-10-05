@@ -5,13 +5,13 @@ stringanuova = stringa.replace('A', 'a').replace('E', 'e').replace('I','i').repl
 
 l = stringanuova.split(' ')
 
-# Creiamo i tuple iterando se nella lista l compaiono parole con il valore richiesto (la vocale)
-a = tuple([elem for elem in l if 'a' in elem])
-e = tuple([elem for elem in l if 'e' in elem])
-i = tuple([elem for elem in l if 'i' in elem])
-o = tuple([elem for elem in l if 'o' in elem])
-u = tuple([elem for elem in l if 'u' in elem])
+# Creiamo il dizionario di tuple, dove ad ogni key corrisponde una tuple di parole che contengono quella key
+# [elem for elem in l if 'a' in elem] è una List Comprehension, che significa:
+# Per ogni elemento della lista l, se la vocale è presente nell'elemento, aggiungi l'elemento alla lista
+d = {'a': tuple([elem for elem in l if 'a' in elem]),
+     'e': tuple([elem for elem in l if 'e' in elem]),
+     'i': tuple([elem for elem in l if 'i' in elem]),
+     'o': tuple([elem for elem in l if 'o' in elem]),
+     'u': tuple([elem for elem in l if 'u' in elem])}
 
-# Creiamo il dizionario di tuple
-dizionario = {'a': a, 'e': e, 'i': i, 'o': o, 'u': u}
-print(dizionario)
+print(d)
