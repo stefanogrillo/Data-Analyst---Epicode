@@ -17,6 +17,18 @@ print("Il nome del cliente che ha speso di più è {} per un valore di {} €".f
 indice_min = lista[1].index(min(lista[1]))
 print("Il nome del cliente che ha speso di più è {} per un valore di {} €".format(lista[0][indice_min], lista[1][indice_min]))
 
-# Calcola la media di tutte le spese
-print("La media è ", sum(lista[1]) / len(lista[1]))
+# Calcola la media delle spese
+print("La media è ", (sum(lista[1]) / len(lista[1])) )
 
+# Calcola la mediana delle spese, ossia il valore centrale della lista ordinata
+spese = sorted(lista[1])
+# Se la lista ha lunghezza pari, fai la media tra i due valori al centro della lista
+if len(spese) % 2 == 0:
+    mediano = (spese[len(lista[1]) // 2 - 1] + spese[len(lista[1]) // 2]) / 2.0
+else:
+    mediano = spese[len(lista[1]) // 2]
+
+print("La mediana è ", mediano)
+
+# Oppure, importa: "from statistics import median"
+# mediano = median(lista[1])
