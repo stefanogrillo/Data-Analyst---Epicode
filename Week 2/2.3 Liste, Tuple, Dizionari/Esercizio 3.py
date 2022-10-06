@@ -11,9 +11,9 @@ unione = new_multiset
 for k in new_multiset:
     if k in multiset1:
         unione[k] = multiset1[k]
-    if k in multiset2 and unione[k] != None:
+    if k in multiset2 and unione.get(k, None) != None:
         unione[k] += multiset2[k]
-    if k in multiset2 and unione[k] == None:
+    if k in multiset2 and unione.get(k, None) == None:
         unione[k] = multiset2[k]
 print("unione è", unione)
 
@@ -26,17 +26,20 @@ for k in new_multiset:
             intersezione[k] = multiset1[k]
         else:
             intersezione[k] = multiset2[k]
+    elif multiset2.get(k, None) is not None:
+        intersezione[k] = multiset2[k]
+    else:
+        intersezione[k] = multiset1[k]
 print("intersezione è", intersezione)
 
 # Differenza tra le frequenze, non minore di zero
 differenza = new_multiset
 for k in new_multiset:
+    # Si può usare anche "multiset1.get(k, None) is not None and multiset2.get(k, None) is not None:"
     if k in multiset1 and k in multiset2:
-        # Se la frequenza minima è nel primo dizionario
-        if multiset1[k] - multiset2[k] >= 0:
-            differenza[k] = (multiset1[k] - multiset2[k])
-        elif multiset2[k] - multiset1[k] >= 0:
-            differenza[k] = multiset2[k] - multiset1[k]
-        else:
-            pass
+        differenza[k] = abs(multiset1[k] - multiset2[k])
+    elif multiset2.get(k, None) is not None:
+        differenza[k] = multiset2[k]
+    else:
+        differenza[k] = multiset1[k]
 print("differenza è", differenza)
