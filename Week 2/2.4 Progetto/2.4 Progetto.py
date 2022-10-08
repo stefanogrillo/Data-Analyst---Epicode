@@ -404,12 +404,27 @@ with open(path, 'r') as file:
     # print(germania[0])
     print(" ")
 
+    
+    # Zero: Starting Date
+    date_list, counter_date = new_date(germania, 2)
+    
+    print("Starting Date:",min(date_list))
+    
+    temporanea1GR = selected_country_variables(list_of_rows, 2, 'Germany', 4, ['1.0', '2.0', '3.0'], [2, 3, 4, 8])
+    first1_GR = first_case(temporanea1GR)
+    print("First Case:", first1_GR)
+    
+    temporanea2GR = selected_country_variables(list_of_rows, 2, 'Germany', 7, ['1.0', '2.0', '3.0'] , [2, 3, 5, 8])
+    first2_GR = first_case(temporanea2GR)
+    paese3GR = selected_country_variables(temporanea2GR, 1, first2_GR, 1, first2_GR, [1, 3])    
+    print("First Death:", paese3GR[0])
 
+    
     # First: Total inhabitants in Germany
     persone_GR = float(germania[0][-1])
     print("Numero Abitanti in {}: {:,.2f}".format(germania[0][1] ,float(germania[0][-1])))
     print(" ")
-    # Come nel caso dei Continenti appena visti, anche qui i valori non corrispondono. La differenza è di 34 milioni
+    # Come nel caso dei Continenti appena visti, anche qui i valori tra Germania e Italia non corrispondono. La differenza è di 34 milioni
     # di abitanti, però hanno almeno lo stesso ordine di grandezza e uno sviluppo culturale simile.
 
 
