@@ -1,7 +1,7 @@
 import csv
 import statistics as s
 import datetime
-from main import selected_country_variables, inhabitants, new_daily, new_date, first_case
+from Metodi import selected_country_variables, inhabitants, new_daily, new_date, first_case
 
 
 
