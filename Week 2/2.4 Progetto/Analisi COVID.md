@@ -1,0 +1,899 @@
+# Analisi dei dati del COVID
+
+### Analisi dei dati di: Nord America - Europa; Italia - Germania 
+
+### Dati ricavati da [.CSV](https://covid.ourworldindata.org/data/owid-covid-data.csv) da [Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data)
+
+In questa analisi, voglio comprendere le differenza tra le coppie: continenti North America e Europa, e Stati Italia e Germania. In particolare, mi focalizzo solo sulle variabili:
+- new_cases
+- new_deaths
+- new_vaccinations_smoothed
+
+Queste variabili mi permettono di vedere lo sviluppo temporale e di calcolare il totale per ogni variabile.
+Se i campioni si somigliano in termni di popolazione, voglio vedere l'effetto del COVID in Paesi con differenza culturali, di densità abitativa, e di politiche sociali molto differenti (coppia Continenti).
+Similmente, voglio analizzare gli effetti del COVID in due Stati dove le politiche sociali, la densità abitativa, e la differenza culturale non sono molto differenti (Italia e Germania).
+
+
+```python
+import csv
+import statistics as s
+# from main import selected_country_variables, inhabitants, new_daily
+import datetime
+```
+
+In questa presentazione, "from main import selected_country_variables, inhabitants, new_daily" è cancellato perchè ogni metodo è qui di seguito riportato. Nel codice originale, invece, ho optato per creare un secondo file dove inserire tutte le funzioni che mi serviranno.
+
+## Metodi
+
+
+```python
+def selected_country_variables(original, indice1, valore1, indice2, valore2, listae):
+    """
+    Legge una lista di liste e crea una nuova lista di liste con solo le righe selezionate
+    :param original: lista di liste di origine
+    :param indice1: indice nella lista di liste di origine dove controllare per un valore
+    :param valore1: valore nella lista di liste di origine in posizione indice
+    :param indice2: indice nella lista di liste di origine dove controllare per un valore
+    :param valore2: valore nella lista di liste di origine in posizione indice
+    :param lista: lista con gli indici delle colonne che vogliamo estrarre
+    :return: lista di liste
+    """
+    country = []
+    for i in range(0, (len(original))):
+        valori1 = original[i][int(indice1)]
+        valori2 = original[i][int(indice2)]
+        # Se il valore del indice scelto è quello che voglio
+        if valori1 == str(valore1) and valori2 in valore2:
+            riga = []
+            country.append(riga)
+            # Allora aggiungi dalla riga corrispondente solo i valori degli indici scelti in "listae"
+            for j in listae:
+                riga.append(original[i][j])
+    return country
+```
+
+Creiamo un metodo per selezionare solo le righe corrispondenti ad un valore di nostra scelta. Il metodo parte da una lista di liste e ritorna una lista di liste. Lo useremo sia per selezionare i Continenti che i Paesi.
+
+
+```python
+def inhabitants(original):
+    """
+    Legge una lista di liste e restituisce il numero di abitanti per regione; avviene dopo la preselezione del metodo
+    "selected_country_variables", quindi va eseguita sugli indici specifici location (1) e population (6)
+    :param original: lista di liste di origine
+    :return: stampa del numero di abitanti
+    """
+    nations_in_region = []
+    for i in range(0, len(original)):
+        nations_in_region.append((original[i][1], original[i][6]))
+
+    # Voglio recuperare solo i valori univoci dei Paesi e sommarne le Popolazioni 
+    set_nations_in_region = set(nations_in_region)
+    sum_set = [float(t[1]) for t in set_nations_in_region]
+
+    return sum(sum_set)
+```
+
+Qui creiamo un metodo che parte da una lista di liste e ritorna un valore: il numero degli abitanti. Questo metodo è necessario per sommare i valori degli abitanti nei vari Paesi contenuti nei Continenti.
+
+
+```python
+def new_daily(original, indice):
+    """
+    Legge una lista di liste e restituisce il numero di nuovi casi
+    :param original: lista di liste di origine
+    :param indice: indice nella lista di liste di cosa vogliamo ottenere (X)
+    :return: lista dei valori di X; somma totale di X; somma valori mancanti
+    """
+    cases = []
+    counter = 0
+    for i in range(0,len(original)):
+        # Voglio contare solo i valori non vuoti
+        if original[i][int(indice)] != '':
+            cases.append(float(original[i][int(indice)]))
+        else:
+            counter += 1
+
+    total = int(sum(cases))
+
+    return cases, total, int(counter)
+```
+
+Questo metodo ci offre la possibilità di partire da una lista di liste e di estrarre:
+- una lista di valori
+- il totale rispetto alla variabile che vogliamo
+- il totale degli oggetti mancanti rispetto alla variabile che vogliamo
+
+
+```python
+def new_date(original, indice):
+    """
+    Legge una lista di liste e restituisce una lista di date (in formato data)
+    :param original: lista di liste di origine
+    :param indice: indice nella lista di liste di cosa vogliamo ottenere (X)
+    :return: lista dei valori di X; somma valori mancanti
+    """
+    cases = []
+    counter = 0
+    for i in range(0,len(original)):
+        # Voglio contare solo i valori non vuoti
+        if original[i][int(indice)] != '':
+            cases.append(datetime.datetime.strptime(original[i][int(indice)], '%Y-%m-%d'))
+        else:
+            counter += 1
+  
+    return cases, int(counter)
+```
+
+
+```python
+def first_case(original):
+    """
+    Legge una lista di liste e restituisce il valore minimo
+    :param original: lista di liste di origine
+    :return: prima data
+    """
+    min_date = []
+    for i in range(0,len(original)):
+        min_date.append(original[i][1])
+
+    return min(min_date)
+```
+
+Questo metodo ci permette di estrarre la lista di date nel database per la lista di liste inserita.
+
+## Pre-Analisi
+
+
+```python
+path = ('C:\\Users\\elste\\Desktop\\epicode\\2_Week\\Day_4\\owid_covid_data.csv')
+list_of_rows = []
+with open(path, 'r') as file:
+    reader = csv.reader(file, delimiter=',')
+    for row in reader:
+        list_of_rows.append(row)
+    print("reader è di tipo ", type(reader))
+```
+
+    reader è di tipo  <class '_csv.reader'>
+    
+
+Importiamo il .csv e verifichiamo che struttura e che classe (type()) ha. Per praticità, ora la trasformiamo in una lista di liste.
+
+
+```python
+    # list_of_rows = list(reader)
+    print(list_of_rows[0:2])
+```
+
+    [['iso_code', 'continent', 'location', 'date', 'total_cases', 'new_cases', 'new_cases_smoothed', 'total_deaths', 'new_deaths', 'new_deaths_smoothed', 'total_cases_per_million', 'new_cases_per_million', 'new_cases_smoothed_per_million', 'total_deaths_per_million', 'new_deaths_per_million', 'new_deaths_smoothed_per_million', 'reproduction_rate', 'icu_patients', 'icu_patients_per_million', 'hosp_patients', 'hosp_patients_per_million', 'weekly_icu_admissions', 'weekly_icu_admissions_per_million', 'weekly_hosp_admissions', 'weekly_hosp_admissions_per_million', 'total_tests', 'new_tests', 'total_tests_per_thousand', 'new_tests_per_thousand', 'new_tests_smoothed', 'new_tests_smoothed_per_thousand', 'positive_rate', 'tests_per_case', 'tests_units', 'total_vaccinations', 'people_vaccinated', 'people_fully_vaccinated', 'total_boosters', 'new_vaccinations', 'new_vaccinations_smoothed', 'total_vaccinations_per_hundred', 'people_vaccinated_per_hundred', 'people_fully_vaccinated_per_hundred', 'total_boosters_per_hundred', 'new_vaccinations_smoothed_per_million', 'new_people_vaccinated_smoothed', 'new_people_vaccinated_smoothed_per_hundred', 'stringency_index', 'population', 'population_density', 'median_age', 'aged_65_older', 'aged_70_older', 'gdp_per_capita', 'extreme_poverty', 'cardiovasc_death_rate', 'diabetes_prevalence', 'female_smokers', 'male_smokers', 'handwashing_facilities', 'hospital_beds_per_thousand', 'life_expectancy', 'human_development_index', 'excess_mortality_cumulative_absolute', 'excess_mortality_cumulative', 'excess_mortality', 'excess_mortality_cumulative_per_million'], ['AFG', 'Asia', 'Afghanistan', '2020-02-24', '5.0', '5.0', '', '', '', '', '0.125', '0.125', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '8.33', '40099462.0', '54.422', '18.6', '2.581', '1.337', '1803.987', '', '597.029', '9.59', '', '', '37.746', '0.5', '64.83', '0.511', '', '', '', '']]
+    
+
+Il codice "list_of_rows = list(reader)" funziona solo sul IDE PyCharm (non qui). Questo codice ha una versione alternativa per importare il .CSV. <br><br>
+Si può vedere la struttura della lista di liste. La prima lista corrisponde agli Header del .CSV, dalla seconda lista si presentano i dati, i quali possono contenere molti valori vuoti da escludere dall'analisi specifiche. <br>
+I dati del _Header_ ci servono per decidere quali _colonne_ della _matrice_ vogliamo analizzare. 
+
+
+```python
+    print("Il numero di liste è {:,.2f} \n".format(len(list_of_rows)))
+```
+
+    Il numero di liste è 221,492.00 
+    
+    
+
+Di queste colonne, noi vogliamo considerare solo "continent", "location ", "date", "new_cases", "new_deaths", "new_vaccinations_smoothed", "population". Ne devo recuperare gli indici per creare una matrice ridotta su cui lavorare.
+
+
+```python
+    # Per ridurre il numero di variabili, dal Header recupero gli indici delle variabili che mi interessano:
+    print("continent ", list_of_rows[0].index('continent'))
+    print("location ", list_of_rows[0].index('location'))
+    print("date", list_of_rows[0].index('date'))
+    print("new_cases ", list_of_rows[0].index('new_cases'))
+    print("new_deaths ", list_of_rows[0].index('new_deaths'))
+    print("new_vaccinations_smoothed ", list_of_rows[0].index('new_vaccinations_smoothed'))
+    print("population ", list_of_rows[0].index('population'))
+
+
+    # Lista degli indici di colonna che mi interessano
+    lista = [1,2,3,5,8,39,48]
+```
+
+    continent  1
+    location  2
+    date 3
+    new_cases  5
+    new_deaths  8
+    new_vaccinations_smoothed  39
+    population  48
+    
+
+    Ho scelto queste variabili perché: 
+    - Continent mi permette di selezionare i continenti che voglio: North America e Europe
+    - Location mi permette di selezionare i paesi che voglio: Italy e Germany
+    - Date (non implementato)
+    - New cases mi permette di vedere l'andamento giornaliero di Nuovi Casi, e di calcolarne il totale
+    - New deaths mi permette di vedere l'andamento giornaliero di Nuove Morti, e di calcolarne il totale
+    - New vaccinations smooth mi permette di vedere l'andamento giornaliero mediato su 7 giorni (ha più valori rispetto
+      a "new vaccinations)
+    - Population mi permette di comprendere le dimensioni dei continenti e degli Stati/Paesi
+
+## Analisi Continente 1. Nord America 
+
+
+```python
+    # NORTH AMERICA
+    print("NORTH AMERICA")
+    # Voglio estrarre solo i valori corrispondenti al continente "North America"
+    america = selected_country_variables(list_of_rows, 1, 'North America', 1, 'North America', lista)
+    print(america[0])
+```
+
+    NORTH AMERICA
+    ['North America', 'Anguilla', '2020-03-28', '2.0', '', '', '15753.0']
+    
+
+
+```python
+    # Zero: Starting Date
+    date_list, counter_date = new_date(america, 2)
+    
+    print("Starting Date:",min(date_list))
+    
+    paese1NA = selected_country_variables(list_of_rows, 1, 'North America', 3, '2020-01-06', [2, 5])
+    print("First Count:", paese1NA)
+    
+    temporanea1NA = selected_country_variables(list_of_rows, 1, 'North America', 4, ['1.0', '2.0', '3.0'], [2, 3, 4, 8])
+    first1_NA = first_case(temporanea1NA)
+    paese2NA = selected_country_variables(temporanea1NA, 1, first1_NA, 1, first1_NA, [0, 1, 2])
+    print("First Case:", paese2NA)
+    
+    temporanea2NA = selected_country_variables(list_of_rows, 1, 'North America', 7, ['1.0', '2.0', '3.0'] , [2, 3, 5, 8])
+    first2_NA = first_case(temporanea2NA)
+    paese3NA = selected_country_variables(temporanea2NA, 1, first2_NA, 1, first2_NA, [0, 1, 3])    
+    print("First Death:", paese3NA)
+```
+
+    Starting Date: 2020-01-01 00:00:00
+    First Count: [['Mexico', '']]
+    First Case: [['United States', '2020-01-22', '1.0']]
+    First Death: [['United States', '2020-02-29', '1.0']]
+    
+
+Il Messico ha iniziato a raccogliere dati dal 1 Gennaio 2020, ma il primo caso nel continente è avvenuto il 22 Gennaio negli Stati Uniti. La prima morte è avvenuta negli Stati Uniti il 29 Febbraio 2020.
+
+
+```python
+    # First: Total inhabitants in North America
+    persone_NA = inhabitants(america)
+    print("Numero Abitanti in {}: {:,.2f}".format(america[0][0], persone_NA))
+```
+
+    Numero Abitanti in North America: 596,315,269.00
+    
+
+
+```python
+    # Second: Total New Daily Cases in North America
+    new_daily_cases_NA, cases_tot_NA, counter_cases_NA = new_daily(america, 3)
+    print("Casi Totali nel Nord America: {:,.2f}".format(cases_tot_NA))
+    
+    print("Percentuale di Ammalati sulla Popolazione: {:,.2f} %".format((cases_tot_NA * 100) / persone_NA))
+    
+    print("Media Giornaliera di Nuovi Ammalati: {:,.2f}".format(s.mean(new_daily_cases_NA)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_cases_NA, len(america), (counter_cases_NA * 100/len(america))))
+    if (counter_cases_NA * 100 / len(america)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+        
+    print("Mediana: {:,.2f}".format(s.median(new_daily_cases_NA)))
+    
+    print("Massimo Nuovi Casi Giornalieri: {:,.2f}".format(max(new_daily_cases_NA)))
+    
+    print("Minimo Nuovi Casi Giornalieri: {:,.2f}".format(min(new_daily_cases_NA)))
+```
+
+    Casi Totali nel Nord America: 114,470,189.00
+    Percentuale di Ammalati sulla Popolazione: 19.20 %
+    Media Giornaliera di Nuovi Ammalati: 3,600.37
+    Valori Mancanti: 2,274.00 
+    Valori Totali: 34,068.00 
+    Percentuale Mancanti: 6.67 %
+    Più del 5% di osservazioni è mancante: perché?
+    Mediana: 4.00
+    Massimo Nuovi Casi Giornalieri: 1,355,368.00
+    Minimo Nuovi Casi Giornalieri: 0.00
+    
+
+Le osservazioni sul numero di casi rivelano che più del 5% di osservazioni è mancante. Questo indica o una mancanza di dati ufficiali o che l'arrivo del virus nel Continente è da datare dopo l'inizio della pandemia (inizio osservazioni).
+
+
+```python
+    # Third: Total New Daily Deaths in North America
+    new_daily_deaths_NA, deaths_tot_NA, counter_deaths_NA = new_daily(america, 4)
+    print("Morti Totali: {:,.2f}".format(sum(new_daily_deaths_NA)))
+    
+    print("Percentuale di Morti sugli Ammalati: {:,.2f} %".format(sum(new_daily_deaths_NA) * 100 / cases_tot_NA))
+
+    print("Percentuale di Morti sugli Abitanti: {:,.2f} %".format(sum(new_daily_deaths_NA) * 100 / persone_NA))
+
+    print("Media Giornaliera di Nuovi Morti: {:,.2f}".format(s.mean(new_daily_deaths_NA)))
+
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_deaths_NA, len(america), (counter_deaths_NA * 100/len(america))))
+    if (counter_deaths_NA * 100/len(america)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+    
+    print("Mediana: {:,.2f}".format(s.median(new_daily_deaths_NA)))
+    
+    print("Massimo Nuove Morti Giornaliere: {:,.2f}".format(max(new_daily_deaths_NA)))
+    
+    print("Minimo Nuove Morti Giornaliere: {:,.2f}".format(min(new_daily_deaths_NA)))
+```
+
+    Morti Totali: 1,509,163.00
+    Percentuale di Morti sugli Ammalati: 1.32 %
+    Percentuale di Morti sugli Abitanti: 0.25 %
+    Media Giornaliera di Nuovi Morti: 54.78
+    Valori Mancanti: 6,518.00 
+    Valori Totali: 34,068.00 
+    Percentuale Mancanti: 19.13 %
+    Più del 5% di osservazioni è mancante: perché?
+    Mediana: 0.00
+    Massimo Nuove Morti Giornaliere: 4,395.00
+    Minimo Nuove Morti Giornaliere: 0.00
+    
+
+I valori mancanti nella variabile "nuove morti" identifica o una mancanza di dati ufficiali sulle morti da COVID o un minore effetto sul Continente rispetto al numero di ammalati.
+
+
+```python
+    # Fourth: Total New Vaccinations Smoothed in North America
+    new_daily_vacc_NA, vacc_tot_NA, counter_vacc_NA = new_daily(america, 5)
+    print("Vaccinazioni Totali: {:,.2f} \nPercentuale della Popolazione: {:,.2f} %".format(sum(new_daily_vacc_NA), (vacc_tot_NA * 100) / persone_NA))
+
+    print("Percentuale di Vaccinazioni su Ammalati: {:.2f} %".format(sum(new_daily_vacc_NA) * 100 / cases_tot_NA))
+    
+    print("Media di Nuove Vaccinazioni Giornaliere: {:,.2f}".format(s.mean(new_daily_vacc_NA)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_vacc_NA, len(america), (counter_vacc_NA * 100/len(america))))
+    if (counter_vacc_NA * 100/len(america)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+        
+    print("Mediana delle Vaccinazioni: {:,.2f}".format(s.median(new_daily_vacc_NA)))
+    
+    print("Massimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(max(new_daily_vacc_NA)))
+    
+    print("Minimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(min(new_daily_vacc_NA)))
+```
+
+    Vaccinazioni Totali: 1,061,067,059.00 
+    Percentuale della Popolazione: 177.94 %
+    Percentuale di Vaccinazioni su Ammalati: 926.94 %
+    Media di Nuove Vaccinazioni Giornaliere: 56,144.08
+    Valori Mancanti: 15,169.00 
+    Valori Totali: 34,068.00 
+    Percentuale Mancanti: 44.53 %
+    Più del 5% di osservazioni è mancante: perché?
+    Mediana delle Vaccinazioni: 402.00
+    Massimo Nuove Vaccinazioni Giornaliere: 3,500,633.00
+    Minimo Nuove Vaccinazioni Giornaliere: 0.00
+    
+
+E' da notare che le vaccinazioni sono partite molto in ritardo rispetto all'inizio dell'epidemia. Questo va ricordato nel momento in cui si valuta il significato statistico della media in paragone ai valori mancanti: quei valori non potevano esserci perché non esisteva il vaccino.
+
+## Analisi Continente 2. Europa 
+
+
+```python
+    # EUROPA
+    print("EUROPA")
+    # Voglio estrarre solo i valori corrispondenti al continente "Europa"
+    europa = selected_country_variables(list_of_rows, 1, 'Europe', 1, 'Europe', lista)
+    print(europa[0])
+```
+
+    EUROPA
+    ['Europe', 'Albania', '2020-02-25', '', '', '', '2854710.0']
+    
+
+
+```python
+    # Zero: Starting Date
+    date_list, counter_date = new_date(europa, 2)
+    
+    print("Starting Date:",min(date_list))
+    
+    paese1EU = selected_country_variables(list_of_rows, 1, 'Europe', 3, '2020-01-06', [2, 5])
+    print("First Count:", paese1EU)
+    
+    temporanea1EU = selected_country_variables(list_of_rows, 1, 'Europe', 4, ['1.0', '2.0', '3.0'], [2, 3, 4, 8])
+    first1_EU = first_case(temporanea1EU)
+    paese2EU = selected_country_variables(temporanea1EU, 1, first1_EU, 1, first1_EU, [0, 1, 2])
+    print("First Case:", paese2EU)
+    
+    temporanea2EU = selected_country_variables(list_of_rows, 1, 'Europe', 7, ['1.0', '2.0', '3.0'] , [2, 3, 5, 8])
+    first2_EU = first_case(temporanea2EU)
+    paese3EU = selected_country_variables(temporanea2EU, 1, first2_EU, 1, first2_EU, [0, 1, 3])    
+    print("First Death:", paese3EU)
+```
+
+    Starting Date: 2020-01-06 00:00:00
+    First Count: [['Estonia', ''], ['Greece', ''], ['Latvia', '']]
+    First Case: [['France', '2020-01-24', '2.0']]
+    First Death: [['United Kingdom', '2020-01-30', '1.0']]
+    
+
+I dati Europei mostrano l'inizio delle osservazioni il 6 Gennaio 2020 nei Paesi Estonia, Grecia e Latvia. I primi casi sono stati in Francia il 24 Gennaio 2020. La prima morte in Europa è avvenuta in Regno Unito il 30 Gennaio.
+
+
+```python
+    # First: Total inhabitants in Europe
+    persone_EU = inhabitants(europa)
+    print("Numero Abitanti in {}: {:,.2f}".format(europa[0][0], persone_EU))
+    
+    date_list, counter_date = new_date(europa, 2)
+    
+    print(min(date_list))
+```
+
+    Numero Abitanti in Europe: 748,655,221.00
+    2020-01-06 00:00:00
+    
+
+La differenza tra i due continenti si riduce a 152 milioni di persone circa. Nonostante le due popolazioni non siano identiche, voglio considerarle comparabili perché hanno almeno lo stesso ordine di grandezza e uno sviluppo culturale simile. 
+
+
+```python
+    # Second: Total New Daily Cases in Europe
+    new_daily_cases_EU, cases_tot_EU, counter_cases_EU = new_daily(europa, 3)
+    print("I casi totali in Europa sono {:,.2f}".format(cases_tot_EU))
+
+    print("Percentuale di Ammalati sulla Popolazione: {:,.2f} %".format((cases_tot_EU * 100) / persone_EU))
+    
+    print("Media Giornaliera di Nuovi Ammalati: {:,.2f}".format(s.mean(new_daily_cases_EU)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_cases_EU, len(europa), (counter_cases_EU * 100/len(europa))))
+    if (counter_cases_EU * 100/len(europa)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+        
+    print("Mediana: {:,.2f}".format(s.median(new_daily_cases_EU)))
+    
+    print("Massimo Nuovi Casi Giornalieri: {:,.2f}".format(max(new_daily_cases_EU)))
+    
+    print("Minimo Nuovi Casi Giornalieri: {:,.2f}".format(min(new_daily_cases_EU)))
+```
+
+    I casi totali in Europa sono 230,163,124.00
+    Percentuale di Ammalati sulla Popolazione: 30.74 %
+    Media Giornaliera di Nuovi Ammalati: 4,939.23
+    Valori Mancanti: 1,300.00 
+    Valori Totali: 47,899.00 
+    Percentuale Mancanti: 2.71 %
+    Meno del 5% di osservazioni è mancante
+    Mediana: 290.00
+    Massimo Nuovi Casi Giornalieri: 527,487.00
+    Minimo Nuovi Casi Giornalieri: 0.00
+    
+
+Considerendo che il virus ha avuto la sua comparsa nel continente Europa in Italia, il numero di osservazioni mancanti è più basso rispetto al continente Nord America.
+
+
+```python
+    # Third: Total New Daily Deaths in Europe
+    new_daily_deaths_EU, deaths_tot_EU, counter_deaths_EU = new_daily(europa, 4)
+    print("Morti Totali: {:,.2f}".format(sum(new_daily_deaths_EU)))
+
+    print("Percentuale di Morti sugli Ammalati: {:,.2f} %".format(sum(new_daily_deaths_EU) * 100 / cases_tot_EU))
+
+    print("Percentuale di Morti sugli Abitanti: {:,.2f} %".format(sum(new_daily_deaths_EU) * 100 / persone_EU))
+    
+    print("Media di Nuovi Morti Giornaliera: {:,.2f}".format(s.mean(new_daily_deaths_EU)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_deaths_EU, len(europa), (counter_deaths_EU * 100/len(europa))))
+    if (counter_deaths_EU * 100/len(europa)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+ 
+    print("Mediana: {:,.2f}".format(s.median(new_daily_deaths_EU)))
+    
+    print("Massimo Nuove Morti Giornaliere: {:,.2f}".format(max(new_daily_deaths_EU)))
+    
+    print("Minimo Nuove Morti Giornaliere: {:,.2f}".format(min(new_daily_deaths_EU)))
+```
+
+    Morti Totali: 1,944,478.00
+    Percentuale di Morti sugli Ammalati: 0.84 %
+    Percentuale di Morti sugli Abitanti: 0.26 %
+    Media di Nuovi Morti Giornaliera: 44.01
+    Valori Mancanti: 3,716.00 
+    Valori Totali: 47,899.00 
+    Percentuale Mancanti: 7.76 %
+    Più del 5% di osservazioni è mancante: perché?
+    Mediana: 3.00
+    Massimo Nuove Morti Giornaliere: 1,623.00
+    Minimo Nuove Morti Giornaliere: 0.00
+    
+
+I valori mancanti nella variabile "nuove morti" identifica o una mancanza di dati ufficiali sulle morti da COVID o un effetto ritardato sul Continente rispetto al numero di ammalati.
+
+
+```python
+    # Fourth: Total New Vaccinations Smoothed in Europe
+    new_daily_vacc_EU, vacc_tot_EU, counter_vacc_EU = new_daily(europa, 5)
+    print("Vaccinazioni Totali: {:,.2f} \nPercentuale della Popolazione: {:,.2f} %".format(sum(new_daily_vacc_EU), (vacc_tot_EU * 100) / persone_EU))
+    
+    print("Percentuale di Vaccinazioni sugli Ammalati: {:,.2f} %".format(sum(new_daily_vacc_EU) * 100 / cases_tot_EU))
+
+    print("Media di Nuove Vaccinazioni Giornaliere: {:,.2f}".format(s.mean(new_daily_vacc_EU)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_vacc_EU, len(europa), (counter_vacc_EU * 100/len(europa))))
+    if (counter_vacc_EU * 100/len(europa)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+    
+    print("Mediana: {:,.2f}".format(s.median(new_daily_vacc_EU)))
+    
+    print("Massimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(max(new_daily_vacc_EU)))
+    
+    print("Minimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(min(new_daily_vacc_EU)))
+```
+
+    Vaccinazioni Totali: 1,328,554,234.00 
+    Percentuale della Popolazione: 177.46 %
+    Percentuale di Vaccinazioni sugli Ammalati: 577.22 %
+    Media di Nuove Vaccinazioni Giornaliere: 45,639.10
+    Valori Mancanti: 18,789.00 
+    Valori Totali: 47,899.00 
+    Percentuale Mancanti: 39.23 %
+    Il parametro non è accettabile perchè ha più del 5% di osservazioni mancanti
+    Mediana: 6,178.50
+    Massimo Nuove Vaccinazioni Giornaliere: 1,147,861.00
+    Minimo Nuove Vaccinazioni Giornaliere: 0.00
+    
+
+E' da notare che le vaccinazioni sono partite molto in ritardo rispetto all'inizio dell'epidemia. Questo va ricordato nel momento in cui si valuta il significato statistico della media in paragone ai valori mancanti: quei valori non potevano esserci perché non esisteva il vaccino.
+
+## Analisi Paese 1. Italia 
+
+
+```python
+    # ITALY
+    print("ITALIA")
+    # Voglio estrarre solo i valori corrispondenti al Paese "Italia"
+    italia = selected_country_variables(list_of_rows, 2, 'Italy', lista)
+    print(italia[0])
+```
+
+    ITALIA
+    ['Europe', 'Italy', '2020-01-31', '2.0', '', '', '59240330.0']
+    
+
+
+```python
+    # Zero: Starting Date
+    date_list, counter_date = new_date(italia, 2)
+    
+    print("Starting Date:",min(date_list))
+    
+    temporanea1IT = selected_country_variables(list_of_rows, 2, 'Italy', 4, ['1.0', '2.0', '3.0'], [2, 3, 4, 8])
+    first1_IT = first_case(temporanea1IT)
+    print("First Case:", first1_IT)
+    
+    temporanea2IT = selected_country_variables(list_of_rows, 2, 'Italy', 7, ['1.0', '2.0', '3.0'] , [2, 3, 5, 8])
+    first2_IT = first_case(temporanea2IT)
+    paese3IT = selected_country_variables(temporanea2IT, 1, first2_IT, 1, first2_IT, [1, 3])    
+    print("First Death:", paese3IT[0])
+```
+
+    Starting Date: 2020-01-31 00:00:00
+    First Case: 2020-01-31
+    First Death: ['Italy', '2020-02-21', '1.0']
+    
+
+
+```python
+    # First: Total inhabitants in Italy
+    persone_IT = float(italia[0][-1])
+    print("Numero Abitanti in {}: {:,.2f}".format(italia[0][1] ,float(italia[0][-1])))
+```
+
+    Numero Abitanti in Italy: 59,240,330.00
+    
+
+
+```python
+    # Second: Total New Daily Cases in Italy
+    new_daily_cases_IT, cases_tot_IT, counter_cases_IT = new_daily(italia, 3)
+    print("I casi totali in Italia sono {:,.2f}".format(cases_tot_IT))
+
+    print("Percentuale di Ammalati sulla Popolazione: {:,.2f} %".format((cases_tot_IT * 100) / persone_IT))
+    
+    print("Media Giornaliera di Nuovi Ammalati: {:,.2f}".format(s.mean(new_daily_cases_IT)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_cases_IT, len(italia), (counter_cases_IT * 100/len(italia))))
+    if (counter_cases_IT * 100/len(italia)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+        
+    print("Mediana: {:,.2f}".format(s.median(new_daily_cases_IT)))
+    
+    print("Massimo Nuovi Casi Giornalieri: {:,.2f}".format(max(new_daily_cases_IT)))
+    
+    print("Minimo Nuovi Casi Giornalieri: {:,.2f}".format(min(new_daily_cases_IT)))
+```
+
+    I casi totali in Italia sono 22,648,211.00
+    Percentuale di Ammalati sulla Popolazione: 38.23 %
+    Media Giornaliera di Nuovi Ammalati: 23,157.68
+    Valori Mancanti: 1.00 
+    Valori Totali: 979.00 
+    Percentuale Mancanti: 0.10 %
+    Meno del 5% di osservazioni è mancante
+    Mediana: 10,411.00
+    Massimo Nuovi Casi Giornalieri: 228,123.00
+    Minimo Nuovi Casi Giornalieri: 0.00
+    
+
+Le date di partenza del dataset cambiano di Paese in Paese; in Italia il dataset parte dal '2020-01-31', ossia 979 giorni (osservazioni) ad oggi 6 Ottobre 2022. La mancanza di 1 valore è da considerarsi quasi irrilevante.
+
+
+```python
+    # Third: Total New Daily Deaths in Italy
+    new_daily_deaths_IT, deaths_tot_IT, counter_deaths_IT = new_daily(italia, 4)
+    print("Morti Totali: {:,.2f}".format(sum(new_daily_deaths_IT)))
+
+    print("Percentuale di Morti sugli Ammalati: {:,.2f} %".format(sum(new_daily_deaths_IT) * 100 / cases_tot_IT))
+
+    print("Percentuale di Morti sugli Abitanti: {:,.2f} %".format(sum(new_daily_deaths_IT) * 100 / persone_IT))
+    
+    print("Media di Nuovi Morti Giornaliera: {:,.2f}".format(s.mean(new_daily_deaths_IT)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_deaths_IT, len(italia), (counter_deaths_IT * 100/len(italia))))
+    if (counter_deaths_IT * 100/len(italia)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+ 
+    print("Mediana: {:,.2f}".format(s.median(new_daily_deaths_IT)))
+    
+    print("Massimo Nuove Morti Giornaliere: {:,.2f}".format(max(new_daily_deaths_IT)))
+    
+    print("Minimo Nuove Morti Giornaliere: {:,.2f}".format(min(new_daily_deaths_IT)))
+```
+
+    Morti Totali: 177,331.00
+    Percentuale di Morti sugli Ammalati: 0.78 %
+    Percentuale di Morti sugli Abitanti: 0.30 %
+    Media di Nuovi Morti Giornaliera: 185.30
+    Valori Mancanti: 22.00 
+    Valori Totali: 979.00 
+    Percentuale Mancanti: 2.25 %
+    Meno del 5% di osservazioni è mancante
+    Mediana: 99.00
+    Massimo Nuove Morti Giornaliere: 993.00
+    Minimo Nuove Morti Giornaliere: 1.00
+    
+
+I pochi valori mancanti riguardo al valore Nuovi Morti rappresenta la velocità con cui il virus ha avuto effetti negativi sulla popolazione.
+
+
+```python
+    # Fourth: Total New Vaccinations Smoothed in Italy
+    new_daily_vacc_IT, vacc_tot_IT, counter_vacc_IT = new_daily(italia, 5)
+    print("Vaccinazioni Totali: {:,.2f} \nPercentuale della Popolazione: {:,.2f} %".format(sum(new_daily_vacc_IT), (vacc_tot_IT * 100) / persone_IT))
+    
+    print("Percentuale di Vaccinazioni sugli Ammalati: {:,.2f} %".format(sum(new_daily_vacc_IT) * 100 / cases_tot_IT))
+
+    print("Media di Nuove Vaccinazioni Giornaliere: {:,.2f}".format(s.mean(new_daily_vacc_IT)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_vacc_IT, len(italia), (counter_vacc_IT * 100/len(italia))))
+    if (counter_vacc_IT * 100/len(italia)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+    
+    print("Mediana: {:,.2f}".format(s.median(new_daily_vacc_IT)))
+    
+    print("Massimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(max(new_daily_vacc_IT)))
+    
+    print("Minimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(min(new_daily_vacc_IT)))
+```
+
+    Vaccinazioni Totali: 140,819,912.00 
+    Percentuale della Popolazione: 237.71 %
+    Percentuale di Vaccinazioni sugli Ammalati: 621.77 %
+    Media di Nuove Vaccinazioni Giornaliere: 217,650.56
+    Valori Mancanti: 332.00 
+    Valori Totali: 979.00 
+    Percentuale Mancanti: 33.91 %
+    Più del 5% di osservazioni è mancante: perché?
+    Mediana: 163,744.00
+    Massimo Nuove Vaccinazioni Giornaliere: 665,079.00
+    Minimo Nuove Vaccinazioni Giornaliere: 1,302.00
+    
+
+E' da notare che le vaccinazioni sono partite molto in ritardo rispetto all'inizio dell'epidemia. Questo va ricordato nel momento in cui si valuta il significato statistico della media in paragone ai valori mancanti: quei valori non potevano esserci perché non esisteva il vaccino.
+
+## Analisi Paese 2. Germania 
+
+
+```python
+    # GERMANY
+    print("GERMANIA")
+    # Voglio estrarre solo i valori corrispondenti al Paese "Germania"
+    germania = selected_country_variables(list_of_rows, 2, 'Germany', lista)
+    print(germania[0])
+```
+
+    GERMANIA
+    ['Europe', 'Germany', '2020-01-27', '1.0', '', '', '83408554.0']
+    
+
+
+```python
+    # Zero: Starting Date
+    date_list, counter_date = new_date(germania, 2)
+    
+    print("Starting Date:",min(date_list))
+    
+    temporanea1GR = selected_country_variables(list_of_rows, 2, 'Germany', 4, ['1.0', '2.0', '3.0'], [2, 3, 4, 8])
+    first1_GR = first_case(temporanea1GR)
+    print("First Case:", first1_GR)
+    
+    temporanea2GR = selected_country_variables(list_of_rows, 2, 'Germany', 7, ['1.0', '2.0', '3.0'] , [2, 3, 5, 8])
+    first2_GR = first_case(temporanea2GR)
+    paese3GR = selected_country_variables(temporanea2GR, 1, first2_GR, 1, first2_GR, [1, 3])    
+    print("First Death:", paese3GR[0])
+```
+
+    Starting Date: 2020-01-27 00:00:00
+    First Case: 2020-01-27
+    First Death: ['2020-03-09', '2.0']
+    
+
+
+```python
+    # First: Total inhabitants in Germany
+    persone_GR = float(germania[0][-1])
+    print("Numero Abitanti in {}: {:,.2f}".format(germania[0][1] ,float(germania[0][-1])))
+```
+
+    Numero Abitanti in Germany: 83,408,554.00
+    
+
+Come nel caso dei Continenti appena visti, anche qui i valori non corrispondono. La differenza è di 34 milioni di abitanti, però hanno almeno lo stesso ordine di grandezza e uno sviluppo culturale simile.  
+
+
+```python
+    # Second: Total New Daily Cases in Germany
+    new_daily_cases_GR, cases_tot_GR, counter_cases_GR = new_daily(germania, 3)
+    print("I casi totali in Germania sono {:,.2f}".format(cases_tot_GR))
+
+    print("Percentuale di Ammalati sulla Popolazione: {:,.2f} %".format((cases_tot_GR * 100) / persone_GR))
+    
+    print("Media Giornaliera di Nuovi Ammalati: {:,.2f}".format(s.mean(new_daily_cases_GR)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_cases_GR, len(germania), (counter_cases_GR * 100/len(germania))))
+    if (counter_cases_GR * 100/len(germania)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+        
+    print("Mediana: {:,.2f}".format(s.median(new_daily_cases_GR)))
+    
+    print("Massimo Nuovi Casi Giornalieri: {:,.2f}".format(max(new_daily_cases_GR)))
+    
+    print("Minimo Nuovi Casi Giornalieri: {:,.2f}".format(min(new_daily_cases_GR)))
+```
+
+    I casi totali in Germania sono 33,652,314.00
+    Percentuale di Ammalati sulla Popolazione: 40.35 %
+    Media Giornaliera di Nuovi Ammalati: 34,304.09
+    Valori Mancanti: 2.00 
+    Valori Totali: 983.00 
+    Percentuale Mancanti: 0.20 %
+    Meno del 5% di osservazioni è mancante
+    Mediana: 9,658.00
+    Massimo Nuovi Casi Giornalieri: 527,487.00
+    Minimo Nuovi Casi Giornalieri: 0.00
+    
+
+Le date di partenza del dataset cambiano di Paese in Paese; in Germania il dataset parte dal '2020-01-27', ossia 983 giorni (osservazioni) ad oggi 6 Ottobre 2022. La mancanza di 2 valori è da considerarsi quasi irrilevante.
+
+
+```python
+    # Third: Total New Daily Deaths in Germany
+    new_daily_deaths_GR, deaths_tot_GR, counter_deaths_GR = new_daily(germania, 4)
+    print("Morti Totali: {:,.2f}".format(sum(new_daily_deaths_GR)))
+
+    print("Percentuale di Morti sugli Ammalati: {:,.2f} %".format(sum(new_daily_deaths_GR) * 100 / cases_tot_GR))
+
+    print("Percentuale di Morti sugli Abitanti: {:,.2f} %".format(sum(new_daily_deaths_GR) * 100 / persone_GR))
+    
+    print("Media di Nuovi Morti Giornaliera: {:,.2f}".format(s.mean(new_daily_deaths_GR)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_deaths_GR, len(germania), (counter_deaths_GR * 100/len(germania))))
+    if (counter_deaths_GR * 100/len(germania)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+ 
+    print("Mediana: {:,.2f}".format(s.median(new_daily_deaths_GR)))
+    
+    print("Massimo Nuove Morti Giornaliere: {:,.2f}".format(max(new_daily_deaths_GR)))
+    
+    print("Minimo Nuove Morti Giornaliere: {:,.2f}".format(min(new_daily_deaths_GR)))
+```
+
+    Morti Totali: 150,310.00
+    Percentuale di Morti sugli Ammalati: 0.45 %
+    Percentuale di Morti sugli Abitanti: 0.18 %
+    Media di Nuovi Morti Giornaliera: 160.25
+    Valori Mancanti: 45.00 
+    Valori Totali: 983.00 
+    Percentuale Mancanti: 4.58 %
+    Meno del 5% di osservazioni è mancante
+    Mediana: 91.50
+    Massimo Nuove Morti Giornaliere: 1,244.00
+    Minimo Nuove Morti Giornaliere: 0.00
+    
+
+I valori mancanti rappresentano i giorni trascorsi tra i primi casi e le prime morti.
+
+
+```python
+    # Fourth: Total New Vaccinations Smoothed in Germany
+    new_daily_vacc_GR, vacc_tot_GR, counter_vacc_GR = new_daily(germania, 5)
+    print("Vaccinazioni Totali: {:,.2f} \nPercentuale della Popolazione: {:,.2f} %".format(sum(new_daily_vacc_GR), (vacc_tot_GR * 100) / persone_GR))
+    
+    print("Percentuale di Vaccinazioni sugli Ammalati: {:,.2f} %".format(sum(new_daily_vacc_GR) * 100 / cases_tot_GR))
+
+    print("Media di Nuove Vaccinazioni Giornaliere: {:,.2f}".format(s.mean(new_daily_vacc_GR)))
+    
+    print("Valori Mancanti: {:,.2f} \nValori Totali: {:,.2f} \nPercentuale Mancanti: {:,.2f} %".format(counter_vacc_GR, len(germania), (counter_vacc_GR * 100/len(germania))))
+    if (counter_vacc_GR * 100/len(germania)) < 5.0:
+        print("Meno del 5% di osservazioni è mancante")
+    else:
+        print("Più del 5% di osservazioni è mancante: perché?")
+    
+    print("Mediana: {:,.2f}".format(s.median(new_daily_vacc_GR)))
+    
+    print("Massimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(max(new_daily_vacc_GR)))
+    
+    print("Minimo Nuove Vaccinazioni Giornaliere: {:,.2f}".format(min(new_daily_vacc_GR)))
+```
+
+    Vaccinazioni Totali: 185,905,489.00 
+    Percentuale della Popolazione: 222.89 %
+    Percentuale di Vaccinazioni sugli Ammalati: 552.43 %
+    Media di Nuove Vaccinazioni Giornaliere: 287,334.60
+    Valori Mancanti: 336.00 
+    Valori Totali: 983.00 
+    Percentuale Mancanti: 34.18 %
+    Più del 5% di osservazioni è mancante: perché?
+    Mediana: 165,624.00
+    Massimo Nuove Vaccinazioni Giornaliere: 1,147,861.00
+    Minimo Nuove Vaccinazioni Giornaliere: 18,007.00
+    
+
+E' da notare che le vaccinazioni sono partite molto in ritardo rispetto all'inizio dell'epidemia. Questo va ricordato nel momento in cui si valuta il significato statistico della media in paragone ai valori mancanti: quei valori non potevano esserci perché non esisteva il vaccino.
+
+# Conclusioni
+
+- Il virus è arrivato prima in Nord America che in Europa. E prima in Germania che in Italia.
+- Tuttavia la prima morte è avvenuta in Europa (UK), non nel Nord America. Ed in Italia prima che in Germania.
+- I casi in Nord America sono 114,470,189.00, il 19.20% della popolazione. In Europa sono 230,163,124.00, il 30.74%. Questo forse è dovuto alle diverse densità di popolazione. La Germania ha avuto 33,652,314.00 casi, il 40.30% della popolazione. In Italia ci sono stati 22,648,211.00 casi, cioè il 38.23% della popolazione.
+- In Nord America è morto il 1.32% degli ammalati. In Europa lo 0.84 %. In particolare, in Germania è morto lo 0.45 % e in Italia lo 0.78 %.
+- L'Europa ha il record di vaccinazioni: 1,328,554,234.00 contro 1,061,067,059.00 del Nord America. La Germania ha 185,905,489.00  vaccinazioni, 40 milioni in più dell'Italia. Cionostante, la percentuale di vaccinazioni su popolazione è maggiore in Italia (perché ha meno abitanti). in entrambi questi ultimi Paesi, ogni persona ha ricevuto in media 2.2 vaccini.
