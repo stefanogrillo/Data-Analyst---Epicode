@@ -14,6 +14,10 @@ binari
 ### Dati ora e data:
 - datetime ammette valori compresi dal 1 gennaio 1753 al 31 dicembre 9999 (precisione al trecentesimo di secondo), occupa uno spazio di 8 byte
 - smalldatetime meno preciso del precedente (precisione al minuto), occupa uno spazio di 4 byte
+- date aaaa-mm-gg
+- time hh-mm-ss
+- year aaaa
+- timestamp(x) variabile a seconda di x, da 2 a 14
 
 ### Dati monetari:
 - money Contiene valori monetari da -922337203685477.5808 a 922337203685477.5807 con una precisione al decimillesimo di unità monetaria, occupa 8 bytes di memoria
@@ -21,6 +25,7 @@ binari
 
 ### Dati numerici approssimati: SQL float 
 - float[(n)] Contiene numeri a virgola mobile positivi e negativi, compresi tra 2.23E-308 e 1.79E308 per i valori positivi e tra -2.23E-308 e -1.79E308 per i valori negativi, occupa 8 bytes di memoria ed ha una precisione di 15 cifre
+- double Come float, ma doppio della precisione
 - real Contiene numeri a virgola mobile positivi e negativi comprese tra 1.18E-38 e 3.40E38 per i valori positivi e tra -1.18E-38 e -3.40E38 per i valori negativi, occupa 4 bytes di memoria ed ha una precisione di 7 cifre
 
 ### Dati numerici esatti: SLQ int
@@ -48,3 +53,6 @@ I dati di questo tipo, non vengono memorizzati nelle normali pagine dati di SQL 
 - text un tipo dati a lunghezza variabile, che può memorizzare fino a 2147483647 caratteri.
 - ntext come il precedente ma memorizza caratteri UNICODE, quindi fino alla metà del precedente, cioè 1073741823 caratteri.
 - image può memorizzare fino a 2147483647 bytes di dati binari, è solitamente usato per le immagini.
+- blob (Binary Large Object) file o immagine.
+
+## SQL 
