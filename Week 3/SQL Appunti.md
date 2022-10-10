@@ -56,3 +56,17 @@ I dati di questo tipo, non vengono memorizzati nelle normali pagine dati di SQL 
 - blob (Binary Large Object) file o immagine.
 
 ## SQL 
+In SQL le interrogazioni sono formulate in modo dichiarativo, ossia si specifica che cosa si vuole ottenere.
+```sql
+SELECT <what> FROM <tablewhereiswhatwewant> WHERE <conditions>; 
+```
+Nelle interrogazioni possiamo scegliere uno o più elementi, separati da virgola. Se li vogliamo tutti, usiamo *. <br>
+Possiamo anche mettere degli alias alle tabelle (dove si trovano le informazioni che vogliamo in forma di righe). 
+```sql
+SELECT <alias>.<what1>, <alias>.<what2> FROM <tablewhereiswhatwewant> AS <alias> WHERE <conditions>; 
+```
+WHERE ci permette di scrivere tutte le condizioni che vogliamo con gli operatori: =, <, >, !=, <> (diverso), <=, >=, BETWEEN ... AND ..., IN (appartenente a), LIKE, IS NULL, IS NOT NULL, NOT, AND, OR. <br>
+LIKE si usa per i confronti con stringhe. Si usano i caratteri speciali: _ (per un solo carattere arbitrario) e % (per più caratteri arbitrari).
+```sql
+SELECT f.reddito FROM famiglia AS f WHERE f.name LIKE "_t%o"; 
+```
