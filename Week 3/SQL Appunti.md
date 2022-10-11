@@ -71,11 +71,11 @@ __ALTER TABLE__ (add/remove columns), __UPDATE__ (update data), __CREATE__ (tabl
 
 __GROUP BY__ (data by common element), __ORDER BY__ (__DESC/ASC__ order of view), __HAVING__ (same as WHERE but for the following operations), __COUNT(), SUM(), AVG(), MAX(), MIN()__
 
-### JOINS
-- __INNER JOIN__: only common elements between group A and group B. Not corresponding elements are excluded
-- __LEFT OUTER JOIN__: all elements from group A (if at left) and common elements from group B. Not corresponding left elements are filled with "null"
-- __RIGHT OUTER JOIN__: as above, but for right group B (if at right). Not corresponding right elements are filled with "null"
-- __FULL OUTER JOIN__: all elements from group A and group B. Not corresponding elements are filled with "null"
+### JOINS 
+- __INNER JOIN__: only matching values between table A and table B. Not corresponding elements are excluded
+- __LEFT OUTER JOIN__: all values from table A (if at left) and matching values from table B. Not corresponding left values are filled with "null"
+- __RIGHT OUTER JOIN__: as above, but for right table B (if at right). Not corresponding right values are filled with "null"
+- __FULL OUTER JOIN__: all values from group A and group B. Not matching values are filled with "null"
  
 ## Data
 | __What Data is shown?__ | __Left__ | __Matching__ | __Right__ | __Unmatching Data from Left__ | __Unmatching Data from Right__ |
@@ -85,10 +85,4 @@ __GROUP BY__ (data by common element), __ORDER BY__ (__DESC/ASC__ order of view)
 | RIGHT OUTER JOIN | - | yes | yes | no | shown, missing data for new columns is null |
 | FULL OUTER JOIN | yes | yes | yes | shown, missing data for new columns is null | shown, missing data for new columns is null |
 
-## Columns
-| __What Column are shown?__ | __Left__ | __Matching Columns are repeated?__ | __Right__ | 
-| - | - | - | - | 
-| INNER JOIN | yes | no | yes | 
-| LEFT OUTER JOIN | yes | yes | yes | 
-| RIGHT OUTER JOIN | yes | yes | yes | 
-| FULL OUTER JOIN | yes | yes | yes |
+Columns behave differently. Only chosen columns will appear. 
