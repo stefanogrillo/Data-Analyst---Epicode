@@ -84,9 +84,18 @@ GROUP BY (data by common element), ORDER BY (DESC/ASC order of view), HAVING (sa
 - RIGHT OUTER JOIN: as above, but for right group B (if at right). Not corresponding right elements are filled with "null"
 - FULL OUTER JOIN: all elements from group A and group B. Not corresponding elements are filled with "null"
  
-| Data & Columns | Left | Common | Right | Uncommon from Left | Uncommon from Right |
+## Data
+| - | Left | Matching | Right | Unmatching Data from Left | Unmatching Data from Right |
 | - | - | - | - | - | - |
 | INNER JOIN | - | yes | - | no | no |
 | LEFT OUTER JOIN | yes | yes | - | as null | no |
 | RIGHT OUTER JOIN | - | yes | yes | no | as null |
 | FULL OUTER JOIN | yes | yes | yes | as null | as null |
+
+## Columns
+| - | Left | Matching Columns are repeated? | Right | 
+| - | - | - | - | 
+| INNER JOIN | yes | no | yes | 
+| LEFT OUTER JOIN | yes | yes | yes | 
+| RIGHT OUTER JOIN | yes | yes | yes | 
+| FULL OUTER JOIN | yes | yes | yes |
