@@ -70,3 +70,23 @@ LIKE si usa per i confronti con stringhe. Si usano i caratteri speciali: _ (per 
 ```sql
 SELECT f.reddito FROM famiglia AS f WHERE f.name LIKE "_t%o"; 
 ```
+
+### Commands and Clauses
+SELECT (data), FROM (table), WHERE (filter), AS (rename as alias), JOIN (combine rows), AND (combine conditions), OR (combine conditions), LIMIT (limit the returned rows), IN (specify multiple values with where), CASE (return value in specified condition), NOT, IS NULL (where is null), LIKE (search pattern), COMMIT (write transaction to DB), ROLL BACK (undo a transaction)
+
+ALTER TABLE (add/remove columns), UPDATE (update data), CREATE (tables, datasets, views, index), DELETE (rows), INSERT (add single row), DROP (delete tables, datasets, index)
+
+GROUP BY (data by common element), ORDER BY (DESC/ASC order of view), HAVING (same as WHERE but for the following operations), COUNT(), SUM(), AVG(), MAX(), MIN()
+
+### JOINS
+- INNER JOIN: only common elements between group A and group B. Not corresponding elements are excluded
+- LEFT OUTER JOIN: all elements from group A (if at left) and common elements from group B. Not corresponding left elements are filled with "null"
+- RIGHT OUTER JOIN: as above, but for right group B (if at right). Not corresponding right elements are filled with "null"
+- FULL OUTER JOIN: all elements from group A and group B. Not corresponding elements are filled with "null"
+
+| Data & Columns | Left | Common | Right | Uncommon |
+| - | - | - | - | - |
+| INNER JOIN | - | yes | - | no |
+| LEFT OUTER JOIN | yes | yes | - | as null |
+| RIGHT OUTER JOIN | - | yes | yes | as null |
+| FULL OUTER JOIN | yes | yes | yes | as null |
