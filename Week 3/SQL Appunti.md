@@ -85,15 +85,15 @@ GROUP BY (data by common element), ORDER BY (DESC/ASC order of view), HAVING (sa
 - FULL OUTER JOIN: all elements from group A and group B. Not corresponding elements are filled with "null"
  
 ## Data
-| - | Left | Matching | Right | Unmatching Data from Left | Unmatching Data from Right |
+| What Data is shown? | Left | Matching | Right | Unmatching Data from Left | Unmatching Data from Right |
 | - | - | - | - | - | - |
 | INNER JOIN | - | yes | - | no | no |
-| LEFT OUTER JOIN | yes | yes | - | as null | no |
-| RIGHT OUTER JOIN | - | yes | yes | no | as null |
-| FULL OUTER JOIN | yes | yes | yes | as null | as null |
+| LEFT OUTER JOIN | yes | yes | - | shown, missing data for new columns is null | no |
+| RIGHT OUTER JOIN | - | yes | yes | no | shown, missing data for new columns is null |
+| FULL OUTER JOIN | yes | yes | yes | shown, missing data for new columns is null | shown, missing data for new columns is null |
 
 ## Columns
-| - | Left | Matching Columns are repeated? | Right | 
+| What Column are shown? | Left | Matching Columns are repeated? | Right | 
 | - | - | - | - | 
 | INNER JOIN | yes | no | yes | 
 | LEFT OUTER JOIN | yes | yes | yes | 
