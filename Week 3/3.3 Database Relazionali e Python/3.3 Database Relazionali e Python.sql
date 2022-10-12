@@ -5,7 +5,7 @@ CREATE DATABASE `discografia` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf
 CREATE TABLE `disco` (
   `NroSerie` varchar(100) NOT NULL,
   `TitoloAlbum` varchar(100) DEFAULT NULL,
-  `Anno` year NOT NULL,
+  `Anno` year DEFAULT NULL,
   `Prezzo` float(4,2) NOT NULL,
   PRIMARY KEY (`NroSerie`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -16,7 +16,7 @@ CREATE TABLE `disco` (
 CREATE TABLE `esecuzione` (
   `CodiceReg` varchar(100) NOT NULL,
   `TitoloCanzone` varchar(100) NOT NULL,
-  `Anno` year NOT NULL,
+  `Anno` year DEFAULT NULL,
   PRIMARY KEY (`CodiceReg`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
