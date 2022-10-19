@@ -14,7 +14,11 @@ The functions and their Italian counterparts can be found [here](https://www.val
 | <b>AVERAGEIFS(average_range; criteria_range1; criteria1; [criteria_range2; criteria2]; ...)<b> | Averages the range selected, if the criteria_range1 respects the criteria1, the criteria_range2 respects the criteria2, etc. Returns a _number_ |
 | <b>CHAR(text)<b> | Returns the character (_char_, other) specified by the code number in the ASCII table |
 | <b>CONCAT(text1; ...)<b> | Unites text1 with as many other texts as we want. You can also use &. Returns a _string_ |
+| <b>COUNT(range)<b> | Counts the cells in the range that are numbers. Returns a _number_ |
+| <b>COUNTA(range)<b> | Counts the cells in the range that are not empty. Returns a _number_ |
+| <b>COUNTBLANK(range)<b> | Counts the EMPTY cells in the range. Returns a _number_ |
 | <b>COUNTIF(range; criteria)<b> | Counts the elements in the range that respect the criteria chosen. Returns a _number_ |
+| <b>COUNTIFS(criteria_range1; criteria1; ...)<b> | Counts the elements in the range that respect the criterias chosen. Returns a _number_ |
 | <b>DAY(serial_number)<b> | It returns the corresponding day-value from the serial_number. Returns a _number_ |
 | <b>DATEDIF(serial_number1;serial_number2;"y")<b> | It calculates the difference between two dates in terms of Years ("y"), Months ("m"), Days ("d"), and mixed "md". Returns a _number_ |
 | <b>IF(logical_test; [value_if_true]; [value_if_false])<b> | Checks for the validity of the logical_test. Returns the same format (_number_, _date_, _boolean_, etc) as the value_if_true, or as value_if_false |
@@ -28,6 +32,7 @@ The functions and their Italian counterparts can be found [here](https://www.val
 | <b>MID(text; start_num; num_chars)<b> | Extract n chars (num_chars) from the position m (start_num) from the text given. Returns a _string_ |
 | <b>MIN(number1;[number2]; ...)<b> | Finds the smallest value in a list of numbers. Returns a _number_ |
 | <b>MONTH(serial_number)<b> | It returns the corresponding month-value from the serial_number. Returns a _number_ |
+| <b>NOT(logical)<b> | Changes TRUE to FALSE, and FALSE to TRUE |
 | <b>OR(logical1; [logical2]; [logical3]; ...)<b> | It checks if at least one of the conditions is true. Returns a boolean: _TRUE_ or _FALSE_ |
 | <b>PROPER(text)<b> | Returns text, with the first letter as uppercase, as a _string_ |
 | <b>REPLACE(old_text; star_num; num_chars; new_text)<b> | This function replaces in the old_text the new_text, instead of the n chars (num_chars) from the starting point (star_num). Returns a _string_ | 
@@ -43,12 +48,14 @@ The functions and their Italian counterparts can be found [here](https://www.val
 | <b>VLOOKUP(lookup_value; table_array; col_index_num; [range_lookup]) | Searches for the lookup_value in the range_lookup. When the value is met, it returns the n-th column (col_index_num) from the selected table of data (table_array). Returns the same format (_number_, _date_, _boolean_, etc) as the n-th's column data |
 | <b>XLOOKUP(lookup_value; lookup_array; return_array; [if_not_found]; [match_mode]; [search_mode])<b> | This function looks for the lookup_value in the lookup_array. It returns the corresponding values (in terms of row) from the return_array, or a chosen answer ([if_not_found]) if the lookup_value is not found. It allows 4 match modes, exact is 0. Allows for 4 search modes, with first-to-last being 1. Returns the same format (_number_, _date_, _boolean_, etc) as the return_array columns' data |
 | <b>YEAR(serial_number)<b> | It returns the corresponding year-value from the serial_number. Returns a _number_ |
+| <b>XOR(logical1; [logical2]; ...)<b> | Returns a logical exclusive OR of all arguments. If more than one OR are met, gives FALSE. Returns boolean: TRUE or FALSE |
 
 
 | <b>Operations<b> | <b>How to<b> |
 | ---- | ---- |
 | <b>Operators<b> | + - / * ^ %  |
 | <b>Logical Operators<b> | = < > >= <= <> |
+| <b>Other<b> | ? * (can be used as in SQL to indicate 1 char of any type, or any amount of chars of any type) |
 | <b>Interval & Union<b> | : ; |
 | <b>Number of days/months/years between two dates<b> | = DATEDIF(serial_number1; serial_number2; "y") |
 | <b>Number of years<b> | =INT((TODAY() - serial_number)/365,25) |
