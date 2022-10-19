@@ -26,10 +26,14 @@ The functions and their Italian counterparts can be found [here](https://www.val
 | <b>MATCH(lookup_value; lookup_array; [match_type])<b> | Looks for the lookup_value in the lookup_array, with Exact Match (0), Less Than (1), or Greater Than (-1). Found the data, it returns the corresponding relative (to the table) row number. Returns a _number_ |
 | <b>MAX(number1;[number2]; ...)<b> | Finds the greatest value in a list of numbers. Returns a _number_ |
 | <b>MID(text; start_num; num_chars)<b> | Extract n chars (num_chars) from the position m (start_num) from the text given. Returns a _string_ |
+| <b>MIN(number1;[number2]; ...)<b> | Finds the smallest value in a list of numbers. Returns a _number_ |
 | <b>MONTH(serial_number)<b> | It returns the corresponding month-value from the serial_number. Returns a _number_ |
 | <b>OR(logical1; [logical2]; [logical3]; ...)<b> | It checks if at least one of the conditions is true. Returns a boolean: _TRUE_ or _FALSE_ |
-| <b>PROPER(text)<b> | Returns text, with the first letter as uppercase, as a _string_  |
-| <b>RIGHT(text; [num_chars])<b> | Returns as many chars as specified in num_chars, starting from right, from text. Returns a _string_ | 
+| <b>PROPER(text)<b> | Returns text, with the first letter as uppercase, as a _string_ |
+| <b>REPLACE(old_text; star_num; num_chars; new_text)<b> | This function replaces in the old_text the new_text, instead of the n chars (num_chars) from the starting point (star_num). Returns a _string_ | 
+| <b>RIGHT(text; [num_chars])<b> | Returns as many chars as specified in num_chars, starting from right, from text. Returns a _string_ |
+| <b>ROUND(number; num_digits)<b> | Rounds the number to a total n digits. Returns a _number_ |
+| <b>SUBSTITUTE(text; old_text; new_text; [instance_num])<b> | From text, this functions subtitutes old_text with new_text for n times [instance_num]. Return a _string_ |
 | <b>SUM(number1;[number2]; ...)<b> | Sums all the values in the chosen list. Returns a _number_ |
 | <b>SUMIF(range; criteria; [sum_range])<b> | Choose a list to check for a criteria. Then choose the range of values to be summed if that criteria is respected. Returns a _number_ |
 | <b>SUMIFS(sum_range; criteria_range1; criteria1; ...)<b> | Choose the list of values to be summed. Then select a range of values to be checked for the first criteria. Then repeat the range/criteria selection for as many times as needed. Returns a _number_ |
