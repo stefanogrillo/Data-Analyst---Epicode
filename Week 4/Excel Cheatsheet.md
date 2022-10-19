@@ -32,6 +32,8 @@ The functions and their Italian counterparts can be found [here](https://www.val
 | <b>MID(text; start_num; num_chars)<b> | Extract n chars (num_chars) from the position m (start_num) from the text given. Returns a _string_ |
 | <b>MIN(number1;[number2]; ...)<b> | Finds the smallest value in a list of numbers. Returns a _number_ |
 | <b>MONTH(serial_number)<b> | It returns the corresponding month-value from the serial_number. Returns a _number_ |
+| <b>NETWORKDAYS(start_date; end_date; [holidays])<b> | Calculates the difference between the dates in number of days minus the number of holidays. Returns a _number_ |
+| <b>NETWORKDAYS.INTL(start_date; end_date; [weekend]; [holidays])<b> | Calculates the difference between the dates in number of days minus the number of weekend days and the holidays. Returns a _number_ |
 | <b>NOT(logical)<b> | Changes TRUE to FALSE, and FALSE to TRUE |
 | <b>OR(logical1; [logical2]; [logical3]; ...)<b> | It checks if at least one of the conditions is true. Returns a boolean: _TRUE_ or _FALSE_ |
 | <b>PROPER(text)<b> | Returns text, with the first letter as uppercase, as a _string_ |
@@ -48,7 +50,9 @@ The functions and their Italian counterparts can be found [here](https://www.val
 | <b>VLOOKUP(lookup_value; table_array; col_index_num; [range_lookup]) | Searches for the lookup_value in the range_lookup. When the value is met, it returns the n-th column (col_index_num) from the selected table of data (table_array). Returns the same format (_number_, _date_, _boolean_, etc) as the n-th's column data |
 | <b>XLOOKUP(lookup_value; lookup_array; return_array; [if_not_found]; [match_mode]; [search_mode])<b> | This function looks for the lookup_value in the lookup_array. It returns the corresponding values (in terms of row) from the return_array, or a chosen answer ([if_not_found]) if the lookup_value is not found. It allows 4 match modes, exact is 0. Allows for 4 search modes, with first-to-last being 1. Returns the same format (_number_, _date_, _boolean_, etc) as the return_array columns' data |
 | <b>YEAR(serial_number)<b> | It returns the corresponding year-value from the serial_number. Returns a _number_ |
+| <b>YEARFRAC(serial_number1; serial_number2; [basis])<b> | It returns the corresponding year-value from the difference between serial_number1 and serial_number2. The [basis] indicates 4 possibilities: 30/360, actual/actual, actual/360, actual/365, 30/360. Returns a _number_ |
 | <b>XOR(logical1; [logical2]; ...)<b> | Returns a logical exclusive OR of all arguments. If more than one OR are met, gives FALSE. Returns boolean: TRUE or FALSE |
+| <b>WEEKNUM(serial_number; [return_type])<b> | Returns the number of weeks, counting a week from the return_type. Returns a _number_ |
 
 
 | <b>Operations<b> | <b>How to<b> |
