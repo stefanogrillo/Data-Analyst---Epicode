@@ -57,8 +57,8 @@ The functions and their Italian counterparts can be found [here](https://www.val
 
 | <b>Operations<b> | <b>How to<b> |
 | ---- | ---- |
-| <b>Operators<b> | + - / * ^ %  |
-| <b>Logical Operators<b> | = < > >= <= <> |
+| <b>Operators<b> | +  -  /  *  ^  %  |
+| <b>Logical Operators<b> | =  <  >  >=  <=  <> (the last indicates "difference") |
 | <b>Other<b> | ? * (can be used as in SQL to indicate 1 char of any type, or any amount of chars of any type) |
 | <b>Interval & Union<b> | : ; |
 | <b>Number of days/months/years between two dates<b> | = DATEDIF(serial_number1; serial_number2; "y") |
