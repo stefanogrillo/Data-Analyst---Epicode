@@ -33,5 +33,5 @@ Then two selectors. We then started to analyze data from basic steps:
 5. from which Devices does Traffic come from? (Most Traffic comes from Desktop)
 
 <p align="center">
-    <img src="https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/f9e938028064800038a1b3f8ff108cfbb0e1827a/Week%205/Day%201/Esercizio_1%20(3).jpg" alt= “” width="500" height="372">
+    <img src="https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/f9e938028064800038a1b3f8ff108cfbb0e1827a/Week%205/Day%201/Esercizio_1%20(3).jpg" alt= “” width="500" height="1000">
 </p>
