@@ -12,7 +12,7 @@
 | <b>Modalità di visualizzazione/modalità di modifica<b> | La modalità di modifica ti consente di modificare la struttura di un report, di cambiare, aggiungere o rimuovere le origini dati e di utilizzare i controlli interattivi. Gli utenti che possono modificare un report o un'origine dati sono indicati come editor. La modalità di visualizzazione ti consente di visualizzare tutti i dati per i quali disponi dell'autorizzazione necessaria e di utilizzare i controlli interattivi, ma non di modificare la struttura del report. Gli utenti che possono solo visualizzare un report o un'origine dati sono definiti visualizzatori.
 | <b>Condivisione e autorizzazioni di accesso<b> | Quando condividi report e origini dati, puoi stabilire le modalità di accesso degli utenti alla risorsa: (1) L'accesso Può modificare consente agli utenti di modificare e condividere la risorsa (perciò sono editor). (2) L'accesso Può visualizzare consente agli utenti di vedere la risorsa, ma non di modificarla o condividerla (perciò sono visualizzatori). Le opzioni di condivisione avanzate ti permettono di controllare altri aspetti dell'accesso alla risorsa, come la possibilità di scaricare i dati o stampare il report. Le opzioni di condivisione tramite link ti permettono di condividere le tue risorse in modo più ampio su Internet. |
 
-|Tabella |
+| Editor del Report |
 |-|  
 | _Logo_ fai clic per tornare alla Home page Rapporti. |
 | _Barra dei menu_: puoi accedere a molte funzionalità dei menu anche facendo clic con il tasto destro del mouse su un componente. <br> (Da sinistra a destra:) (1) _Condividi_ (1.2) _Invita altre persone_ (1.3) Pianifica consegna email (1.4) _Genera un link al report_ (1.5) Incorpora report (1.6) Scarica report (2) _Visualizza_ (consente di passare dalla modalità di modifica a quella di visualizzazione e viceversa) (3) Altre opzioni (3.2) Crea una copia (3.3) Aggiorna dati (4) Opzioni della guida (5) Gestisci l'Account Google |
@@ -28,4 +28,4 @@
 | Proprietà del grafico: consente di configurare le proprietà relative a stile e dati del grafico selezionato. I componenti statici, come testo, forme e immagini, hanno solo proprietà di stile |
 | Campi disponibili: consente di trascinare dimensioni e metriche dall'origine dati del componente selezionato nel grafico o nel canvas |
 
-####
+#### [More Data](https://support.google.com/looker-studio#topic=6267740)
