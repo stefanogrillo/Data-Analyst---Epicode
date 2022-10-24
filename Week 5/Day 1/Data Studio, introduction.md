@@ -16,3 +16,11 @@ The second page of the report focuses on Visualizations, New Users, and Total Us
 <p align="center">
     <img src="https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/573543bc64a9e99085f1236561edc89ed6186afa/Week%205/Day%201/Esercizio_1%20(1).jpg" alt= “” width="500" height="372">
 </p>
+
+Then we decided to dive into the Sessions by Device, so to see what our users use to access the webpage.
+
+<p align="center">
+    <img src="https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/f9ff5592be059c337f4c7e708b3f6dc6224b92b9/Week%205/Day%201/Esercizio_1%20(2).jpg" alt= “” width="500" height="372">
+</p>
+
+The last step we took was to summarize everythin in a special "Dashboard", which has been our playground for this first-time-ever in Data Studio.
