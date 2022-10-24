@@ -23,4 +23,15 @@ Then we decided to dive into the Sessions by Device, so to see what our users us
     <img src="https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/f9ff5592be059c337f4c7e708b3f6dc6224b92b9/Week%205/Day%201/Esercizio_1%20(2).jpg" alt= “” width="500" height="372">
 </p>
 
-The last step we took was to summarize everythin in a special "Dashboard", which has been our playground for this first-time-ever in Data Studio.
+The last step we took was to summarize everythin in a special "Dashboard", which has been our playground for this first-time-ever in Data Studio. <br>
+Here we collected some Control Labels: New Users, New Users (over Total Users), Conversions, Conversions (over Tot Users), Visualizations, and Tot Gains. <br>
+Then two selectors. We then started to analyze data from basic steps:
+1. where does Traffic come from? (Most is Organic or not identified)
+2. when is Traffic coming? And how much Transactions does it generate per Weekday? (Most Traffic comes on Tuesdays, and most Transactions too)
+3. how many New Users this Year? (Descending Trend Line)
+4. from which Countries does Traffic come from? (Most Traffic comes from US)
+5. from which Devices does Traffic come from? (Most Traffic comes from Desktop)
+
+<p align="center">
+    <img src="https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/f9e938028064800038a1b3f8ff108cfbb0e1827a/Week%205/Day%201/Esercizio_1%20(3).jpg" alt= “” width="500" height="372">
+</p>
