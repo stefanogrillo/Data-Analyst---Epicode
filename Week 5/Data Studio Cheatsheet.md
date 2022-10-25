@@ -11,7 +11,9 @@
 | <b>Credenziali<b> | Il meccanismo mediante il quale un'origine dati stabilisce quali utenti possano visualizzare i dati. |
 | <b>Modalità di visualizzazione/modalità di modifica<b> | La modalità di modifica ti consente di modificare la struttura di un report, di cambiare, aggiungere o rimuovere le origini dati e di utilizzare i controlli interattivi. Gli utenti che possono modificare un report o un'origine dati sono indicati come editor. La modalità di visualizzazione ti consente di visualizzare tutti i dati per i quali disponi dell'autorizzazione necessaria e di utilizzare i controlli interattivi, ma non di modificare la struttura del report. Gli utenti che possono solo visualizzare un report o un'origine dati sono definiti visualizzatori.
 | <b>Condivisione e autorizzazioni di accesso<b> | Quando condividi report e origini dati, puoi stabilire le modalità di accesso degli utenti alla risorsa: (1) L'accesso Può modificare consente agli utenti di modificare e condividere la risorsa (perciò sono editor). (2) L'accesso Può visualizzare consente agli utenti di vedere la risorsa, ma non di modificarla o condividerla (perciò sono visualizzatori). Le opzioni di condivisione avanzate ti permettono di controllare altri aspetti dell'accesso alla risorsa, come la possibilità di scaricare i dati o stampare il report. Le opzioni di condivisione tramite link ti permettono di condividere le tue risorse in modo più ampio su Internet. |
+| <b>Bounce Rate<b> | Is th number of single-page sessions, divided by all sessions. This can also be seen as the percentage of all sessions on your site in which users viewed only a single page and triggered only a single request to the Analytics server |
 
+  
 | Editor del Report |
 |-|  
 | _Logo_ fai clic per tornare alla Home page Rapporti. |
