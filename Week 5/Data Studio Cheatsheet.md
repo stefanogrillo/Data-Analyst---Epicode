@@ -1,5 +1,7 @@
 # Data Studio
 
+#### [Campi](https://support.google.com/analytics/answer/9143382?hl=it#zippy&zippy=%2Ce-commerce%2Csessione)
+
 #### [Legenda](https://support.google.com/looker-studio/answer/9171315?hl=it&ref_topic=6267740#zippy=%2Cistruzioni)
 
 | <b>Concetto<b> | <b>Descrizione<b> |
