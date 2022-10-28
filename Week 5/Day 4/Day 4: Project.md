@@ -6,4 +6,4 @@ This project focuses on two parts:
 
 In these projects there are calculated metrics (like in Part 2: "Categoria Prodotto") that used the programming language of Data Studio, then Joins (Part 2) to create new "datasets" with all the metrics I need (Part 2, from 2 Google Sheets), then functions to change the name Milano (that otherwise would be in Texas; Part 2, "Cittaa") to Milan, then Pivot Tables (Part 2).
 
-Also in Part 1 there are calculated metrics, such as 
+Also in Part 1 there are calculated metrics, such as "Regioni del Mondo (Campo Calcolato)".
