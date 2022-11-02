@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='servizio 2 lov luglio con eventi precedenti al purchase' inline='true' name='federated.07dm2yt0l26g1h1dawvh519ky0pb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='servizio 2 lov luglio con eventi precedenti al purchase' name='textscan.0ksk6z31c2pmkc125bvxg11d6bfc'>
+            <connection class='textscan' directory='C:/Users/elste/Downloads/materiale-per-le-lezioni-20221031T081606Z-001/materiale per le lezioni' filename='servizio 2 lov luglio con eventi precedenti al purchase.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ksk6z31c2pmkc125bvxg11d6bfc' name='servizio 2 lov luglio con eventi precedenti al purchase.csv' table='[servizio 2 lov luglio con eventi precedenti al purchase#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='string' name='clickId' ordinal='0' />
+            <column datatype='string' name='conversionType' ordinal='1' />
+            <column datatype='datetime' name='postbackTimestamp' ordinal='2' />
+            <column datatype='string' name='purchaseType' ordinal='3' />
+            <column datatype='real' name='cast_revenue' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ksk6z31c2pmkc125bvxg11d6bfc' name='servizio 2 lov luglio con eventi precedenti al purchase.csv' table='[servizio 2 lov luglio con eventi precedenti al purchase#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+            <column datatype='string' name='clickId' ordinal='0' />
+            <column datatype='string' name='conversionType' ordinal='1' />
+            <column datatype='datetime' name='postbackTimestamp' ordinal='2' />
+            <column datatype='string' name='purchaseType' ordinal='3' />
+            <column datatype='real' name='cast_revenue' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[servizio 2 lov luglio con eventi precedenti al purchase.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clickId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clickId]</local-name>
+            <parent-name>[servizio 2 lov luglio con eventi precedenti al purchase.csv]</parent-name>
+            <remote-alias>clickId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversionType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[conversionType]</local-name>
+            <parent-name>[servizio 2 lov luglio con eventi precedenti al purchase.csv]</parent-name>
+            <remote-alias>conversionType</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>postbackTimestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[postbackTimestamp]</local-name>
+            <parent-name>[servizio 2 lov luglio con eventi precedenti al purchase.csv]</parent-name>
+            <remote-alias>postbackTimestamp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchaseType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[purchaseType]</local-name>
+            <parent-name>[servizio 2 lov luglio con eventi precedenti al purchase.csv]</parent-name>
+            <remote-alias>purchaseType</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cast_revenue]</local-name>
+            <parent-name>[servizio 2 lov luglio con eventi precedenti al purchase.csv]</parent-name>
+            <remote-alias>cast_revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Left Click ID' datatype='string' name='[Calculation_613052525031612416]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='LEFT([clickId], 3)' />
+      </column>
+      <column caption='Upper Conversion' datatype='string' name='[Calculation_613052525032083457]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='UPPER(LEFT([conversionType],1)) + RIGHT( REPLACE([conversionType],&quot;_&quot;, &quot; &quot;), (LEN([conversionType]) - 1))' />
+      </column>
+      <column caption='Date' datatype='date' name='[Calculation_613052525033275394]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE([postbackTimestamp])' />
+      </column>
+      <column caption='Anno' datatype='string' name='[Calculation_613052525033345027 - Divisione 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[Calculation_613052525033345027]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Calculation_613052525033345027], &quot;-&quot;, 1 ) )' />
+      </column>
+      <column caption='Mese' datatype='string' name='[Calculation_613052525033345027 - Divisione 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[Calculation_613052525033345027]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Calculation_613052525033345027], &quot;-&quot;, 2 ) )' />
+      </column>
+      <column caption='Giorno' datatype='string' name='[Calculation_613052525033345027 - Divisione 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[Calculation_613052525033345027]'>
+        <calculation class='tableau' formula='LEFT( TRIM( SPLIT( [Calculation_613052525033345027], &quot;-&quot;, 3 ) ), 2)' />
+      </column>
+      <column caption='Calcolo 1' datatype='string' datatype-customized='true' name='[Calculation_613052525033345027]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='TRIM( STR([postbackTimestamp]))' />
+      </column>
+      <column caption='Purchase' datatype='string' default-role='measure' default-type='quantitative' name='[Calculation_613052525043134469]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([conversionType],&apos;purchase&apos;) AND str( DATEPART(&apos;hour&apos;,[postbackTimestamp])) &gt;= &apos;00:00:00&apos; AND str( DATEPART(&apos;hour&apos;,[postbackTimestamp])) &lt;= &apos;05:59:00&apos; THEN &apos;Notte&apos; &#13;&#10;ELSEIF CONTAINS([conversionType],&apos;purchase&apos;) AND [Calculation_613052525043310598] &gt;= &apos;06:00:00&apos; AND [Calculation_613052525043310598]&lt;= &apos;11:59:00&apos; THEN &apos;Mattina&apos; &#13;&#10;ELSEIF CONTAINS([conversionType],&apos;purchase&apos;) AND [Calculation_613052525043310598] &gt;= &apos;12:00:00&apos; AND [Calculation_613052525043310598]&lt;= &apos;18:59:00&apos; THEN &apos;Pomeriggio&apos; &#13;&#10;ELSEIF CONTAINS([conversionType],&apos;purchase&apos;) AND [Calculation_613052525043310598] &gt;= &apos;19:00:00&apos; AND [Calculation_613052525043310598]&lt;= &apos;23:59:00&apos; THEN &apos;Sera&apos; &#13;&#10;END' />
+      </column>
+      <column caption='Ora' datatype='string' name='[Calculation_613052525043310598]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='RIGHT( STR([postbackTimestamp]), 8)' />
+      </column>
+      <column datatype='string' name='[Decade]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Calculation_613052525033345027 - Divisione 3]' new-bin='true'>
+          <bin default-name='false' value='&quot;Prima&quot;'>
+            <value>&quot;01&quot;</value>
+            <value>&quot;02&quot;</value>
+            <value>&quot;03&quot;</value>
+            <value>&quot;04&quot;</value>
+            <value>&quot;05&quot;</value>
+            <value>&quot;06&quot;</value>
+            <value>&quot;07&quot;</value>
+            <value>&quot;08&quot;</value>
+            <value>&quot;09&quot;</value>
+            <value>&quot;10&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Seconda&quot;'>
+            <value>&quot;11&quot;</value>
+            <value>&quot;12&quot;</value>
+            <value>&quot;13&quot;</value>
+            <value>&quot;14&quot;</value>
+            <value>&quot;15&quot;</value>
+            <value>&quot;16&quot;</value>
+            <value>&quot;17&quot;</value>
+            <value>&quot;18&quot;</value>
+            <value>&quot;19&quot;</value>
+            <value>&quot;20&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Terza&quot;'>
+            <value>&quot;21&quot;</value>
+            <value>&quot;22&quot;</value>
+            <value>&quot;23&quot;</value>
+            <value>&quot;24&quot;</value>
+            <value>&quot;25&quot;</value>
+            <value>&quot;26&quot;</value>
+            <value>&quot;27&quot;</value>
+            <value>&quot;28&quot;</value>
+            <value>&quot;29&quot;</value>
+            <value>&quot;30&quot;</value>
+            <value>&quot;31&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='servizio 2 lov luglio con eventi precedenti al purchase.csv' datatype='table' name='[__tableau_internal_object_id__].[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]' role='measure' type='quantitative' />
+      <column caption='Cast Revenue' datatype='real' name='[cast_revenue]' role='measure' type='quantitative' />
+      <column caption='Click Id' datatype='string' name='[clickId]' role='dimension' type='nominal' />
+      <column caption='Conversion Type' datatype='string' name='[conversionType]' role='dimension' type='nominal' />
+      <column caption='Postback Timestamp' datatype='datetime' name='[postbackTimestamp]' role='dimension' type='ordinal' />
+      <column caption='Purchase Type' datatype='string' name='[purchaseType]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='clickId' />
+        <field-sort-custom-order field='Calculation_613052525031612416' />
+        <field-sort-custom-order field='conversionType' />
+        <field-sort-custom-order field='Calculation_613052525043134469' />
+        <field-sort-custom-order field='Calculation_613052525032083457' />
+        <field-sort-custom-order field='postbackTimestamp' />
+        <field-sort-custom-order field='Calculation_613052525043310598' />
+        <field-sort-custom-order field='Calculation_613052525033345027' />
+        <field-sort-custom-order field='Calculation_613052525033275394' />
+        <field-sort-custom-order field='purchaseType' />
+        <field-sort-custom-order field='cast_revenue' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='servizio 2 lov luglio con eventi precedenti al purchase.csv' id='servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF'>
+            <properties context=''>
+              <relation connection='textscan.0ksk6z31c2pmkc125bvxg11d6bfc' name='servizio 2 lov luglio con eventi precedenti al purchase.csv' table='[servizio 2 lov luglio con eventi precedenti al purchase#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+                  <column datatype='string' name='clickId' ordinal='0' />
+                  <column datatype='string' name='conversionType' ordinal='1' />
+                  <column datatype='datetime' name='postbackTimestamp' ordinal='2' />
+                  <column datatype='string' name='purchaseType' ordinal='3' />
+                  <column datatype='real' name='cast_revenue' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Foglio 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='servizio 2 lov luglio con eventi precedenti al purchase' name='federated.07dm2yt0l26g1h1dawvh519ky0pb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07dm2yt0l26g1h1dawvh519ky0pb'>
+            <column caption='Giorno' datatype='string' name='[Calculation_613052525033345027 - Divisione 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[Calculation_613052525033345027]'>
+              <calculation class='tableau' formula='LEFT( TRIM( SPLIT( [Calculation_613052525033345027], &quot;-&quot;, 3 ) ), 2)' />
+            </column>
+            <column caption='Calcolo 1' datatype='string' datatype-customized='true' name='[Calculation_613052525033345027]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='TRIM( STR([postbackTimestamp]))' />
+            </column>
+            <column datatype='string' name='[Decade]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_613052525033345027 - Divisione 3]' new-bin='true'>
+                <bin default-name='false' value='&quot;Prima&quot;'>
+                  <value>&quot;01&quot;</value>
+                  <value>&quot;02&quot;</value>
+                  <value>&quot;03&quot;</value>
+                  <value>&quot;04&quot;</value>
+                  <value>&quot;05&quot;</value>
+                  <value>&quot;06&quot;</value>
+                  <value>&quot;07&quot;</value>
+                  <value>&quot;08&quot;</value>
+                  <value>&quot;09&quot;</value>
+                  <value>&quot;10&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Seconda&quot;'>
+                  <value>&quot;11&quot;</value>
+                  <value>&quot;12&quot;</value>
+                  <value>&quot;13&quot;</value>
+                  <value>&quot;14&quot;</value>
+                  <value>&quot;15&quot;</value>
+                  <value>&quot;16&quot;</value>
+                  <value>&quot;17&quot;</value>
+                  <value>&quot;18&quot;</value>
+                  <value>&quot;19&quot;</value>
+                  <value>&quot;20&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Terza&quot;'>
+                  <value>&quot;21&quot;</value>
+                  <value>&quot;22&quot;</value>
+                  <value>&quot;23&quot;</value>
+                  <value>&quot;24&quot;</value>
+                  <value>&quot;25&quot;</value>
+                  <value>&quot;26&quot;</value>
+                  <value>&quot;27&quot;</value>
+                  <value>&quot;28&quot;</value>
+                  <value>&quot;29&quot;</value>
+                  <value>&quot;30&quot;</value>
+                  <value>&quot;31&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='servizio 2 lov luglio con eventi precedenti al purchase.csv' datatype='integer' name='[__tableau_internal_object_id__].[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='servizio 2 lov luglio con eventi precedenti al purchase.csv' datatype='table' name='[__tableau_internal_object_id__].[servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF]' role='measure' type='quantitative' />
+            <column caption='Cast Revenue' datatype='real' name='[cast_revenue]' role='measure' type='quantitative' />
+            <column caption='Postback Timestamp' datatype='datetime' name='[postbackTimestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[cast_revenue]' derivation='Sum' name='[sum:cast_revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[sum:cast_revenue:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[__tableau_internal_object_id__].[cnt:servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[sum:cast_revenue:qk]' z-order='2' />
+            <reference-line axis-column='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[__tableau_internal_object_id__].[cnt:servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF:qk]' enable-instant-analytics='true' fill-above='true' fill-below='true' formula='average' id='refline1' label-type='none' percentage-bands='true' probability='95' scope='per-cell' symmetric='false' value-column='[federated.07dm2yt0l26g1h1dawvh519ky0pb].[sum:cast_revenue:qk]' z-order='1'>
+              <reference-line-value percentage='60' />
+              <reference-line-value percentage='80' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07dm2yt0l26g1h1dawvh519ky0pb].[Decade]</rows>
+        <cols>[federated.07dm2yt0l26g1h1dawvh519ky0pb].[__tableau_internal_object_id__].[cnt:servizio 2 lov luglio con eventi precedenti al purchase.csv_CE7B189CB21548D2977B6C58CD258FFF:qk]</cols>
+      </table>
+      <simple-id uuid='{8D840129-548B-4556-BCB9-8F9F7EE0F020}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Foglio 1' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Foglio 1' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F803DD29-3504-4CA2-8CE0-338C8D730B49}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Foglio 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07dm2yt0l26g1h1dawvh519ky0pb].[:Measure Names]</field>
+            <field>[federated.07dm2yt0l26g1h1dawvh519ky0pb].[Decade]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{354A35A2-7A31-4391-809E-7204B16244FE}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Foglio 1' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{5B0C19BF-B067-458D-B41F-80AAE1485D59}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='139' name='Foglio 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
