@@ -10,31 +10,31 @@ Questi file si basano sull'analisi di due servizi per clienti. L'analisi si foca
 
 Vogliamo creare dei campi calcolati che ci serviranno per migliorare la nostra analisi.
 
-1. Prima Data 
+<b>Prima Data</b> <br>
 Questo campo calcolato rappresenta il primo accesso al marketplace. 
 ```
 { FIXED [Click Id]: MIN([Postback Timestamp]) }
 ```
 
-2. Ripetizione
+<b>Ripetizione</b><br>
 Questo campo calcolato è una ricerca degli User che non fanno un secondo accesso al nostro marketplace.
 ```
 IF [Postback Timestamp]>[Prima Data] THEN [Postback Timestamp] ELSE NULL END
 ```
 
-3. Seconda Data
+<b>Seconda Data</b><br>
 Questo campo calcolato rappresenta l'ultimo accesso al marketplace.
 ```
 { FIXED [Click Id]:MAX([Ripetizione]) }
 ```
 
-4. Giorni di Differenza
+<b>Giorni di Differenza</b><br>
 L'obiettivo è contare la distanza tra la Prima e l'ultima Data.
 ```
 DATEDIFF('day', [Prima Data], [Seconda Data])
 ```
 
-5. Prima Data Time-Zone
+<b>Prima Data Time-Zone</b><br>
 Si creano fasce orarie da studiare.
 ```
 IF DATEPART('hour',[Prima Data]) > 1 AND DATEPART('hour',[Prima Data]) < 8 THEN 'Notte'
@@ -44,7 +44,7 @@ ELSE 'Sera'
 END
 ```
 
-6. Seconda Data Time-Zone
+<b>Seconda Data Time-Zone</b><br>
 Si creano fasce orarie da studiare.
 ```
 IF DATEPART('hour',[Seconda Data]) > 1 AND DATEPART('hour',[Seconda Data]) < 8 THEN 'Notte'
@@ -54,19 +54,19 @@ ELSE 'Sera'
 END
 ```
 
-7. Conversion / Click Id
+<b>Conversion / Click Id</b><br>
 Metrica di paragone tra marketplaces/datasets
 ```
 COUNT([Conversion Type]) / COUNTD([Click Id])
 ```
 
-8. Revenue / Click Id (univoco)
+<b>Revenue / Click Id (univoco)</b><br>
 Metrica di paragone tra marketplaces/datasets
 ```
 SUM([Cast Revenue]) / COUNTD([Click Id])
 ```
 
-9. Split / Click Id (univoco)
+<b>Split / Click Id (univoco)</b><br>
 Metrica di paragone tra marketplaces/datasets
 ```
 SUM(IF [Conversion Type]="split" THEN 1 END) / COUNT([Click Id])
@@ -97,4 +97,38 @@ La _Split_ quanti click fa per tipologia di prodotto?
 E quanta Revenue si genera per tipologia?
 | Servizio 1 | Servizio 2 |
 | - | - | 
-| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/0a1a5fe7fa28a3f2cc5b05b133d648708703a995/Week%206/Day%204/Servizio%201/5.JPG) | ![alt]() |
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/0a1a5fe7fa28a3f2cc5b05b133d648708703a995/Week%206/Day%204/Servizio%201/5.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/4.JPG) |
+
+Paragoniamo le due Revenues per tipologia in entrambi i servizi. Il Servizio 2 si riconferma migliore in termini di prestazioni.
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/6.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/5.jpg) |
+
+Quanto potrebbe generare ogni servizio nel prossimo mese?
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/7.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/6.JPG) |
+
+In media, il carrello comprato per ogni Servizio e per ogni tipologia di vendita, di quant'è?
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/8.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/7.JPG) |
+
+Gli oggetti venduti nel _Purchase Type_ "Abbonamento" hanno gli stessi prezzi?
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/9.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/8.JPG) |
+
+Gli oggetti venduti nel _Purchase Type_ "Credito" hanno gli stessi prezzi?
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/10.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/9.JPG) |
+
+
+
+
+
+
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt]() | ![alt]() |
