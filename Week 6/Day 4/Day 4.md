@@ -9,7 +9,56 @@ Questi file si basano sull'analisi di due servizi per clienti. L'analisi si foca
 ### Pre-Lavorazione
 
 Vogliamo creare dei campi calcolati che ci serviranno per migliorare la nostra analisi.
-1. 
+
+1. Prima Data 
+Questo campo calcolato rappresenta il primo accesso al marketplace. 
+```
+{ FIXED [Click Id]: MIN([Postback Timestamp]) }
+```
+
+2. Ripetizione
+Questo campo calcolato è una ricerca degli User che non fanno un secondo accesso al nostro marketplace.
+```
+IF [Postback Timestamp]>[Prima Data] THEN [Postback Timestamp] ELSE NULL END
+```
+
+3. Seconda Data
+Questo campo calcolato rappresenta l'ultimo accesso al marketplace.
+```
+{ FIXED [Click Id]:MAX([Ripetizione]) }
+```
+
+4. Giorni di Differenza
+L'obiettivo è contare la distanza tra la Prima e l'ultima Data.
+```
+DATEDIFF('day', [Prima Data], [Seconda Data])
+```
+
+5. Prima Data Time-Zone
+Si creano fasce orarie da studiare.
+```
+IF DATEPART('hour',[Prima Data]) > 1 AND DATEPART('hour',[Prima Data]) < 8 THEN 'Notte'
+ELSEIF DATEPART('hour',[Prima Data]) >= 8 AND DATEPART('hour',[Prima Data]) < 12 THEN 'Mattina'
+ELSEIF DATEPART('hour',[Prima Data]) >= 12 AND DATEPART('hour',[Prima Data]) < 18 THEN 'Pomeriggio'
+ELSE 'Sera'
+END
+```
+
+6. Seconda Data Time-Zone
+Si creano fasce orarie da studiare.
+```
+IF DATEPART('hour',[Seconda Data]) > 1 AND DATEPART('hour',[Seconda Data]) < 8 THEN 'Notte'
+ELSEIF DATEPART('hour',[Seconda Data]) >= 8 AND DATEPART('hour',[Seconda Data]) < 12 THEN 'Mattina'
+ELSEIF DATEPART('hour',[Seconda Data]) >= 12 AND DATEPART('hour',[Seconda Data]) < 18 THEN 'Pomeriggio'
+ELSE 'Sera'
+END
+```
+
+7. Conversion / Click Id
+Metrica di paragone tra marketplaces/datasets
+```
+COUNT([Conversion Type]) / COUNTD([Click Id])
+```
 
 # Analisi 
 
