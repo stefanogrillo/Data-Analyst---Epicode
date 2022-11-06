@@ -79,7 +79,7 @@ Qual è il tipo di Conversion Type che genera Revenue? Come si può vedere, il S
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/a84c1ea7f462f71689bb25d54ee0f147549f81b4/Week%206/Day%204/Servizio%201/1.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/046802529bc467ec73917551d51354b4c5b43e69/Week%206/Day%204/Servizio%202/1.JPG) |
 
-Come si sviluppa la Revenue nel Tempo e per Click Id? Qui si conferma il fatto che il Servizio 2 rende più in termini di _Revenue_.
+Come si sviluppa la Revenue nel Tempo e per Click Id? Qui si conferma il fatto che il Servizio 2 rende più in termini di Revenue.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/a84c1ea7f462f71689bb25d54ee0f147549f81b4/Week%206/Day%204/Servizio%201/2.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/2ff9612554db7d599995934eeb3dca9c788ed55a/Week%206/Day%204/Servizio%202/24.JPG) |
@@ -89,12 +89,12 @@ Quando ci sono stati più Split?  Per entrambi i Servizi, il massimo è avvenuto
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/2ff9612554db7d599995934eeb3dca9c788ed55a/Week%206/Day%204/Servizio%201/3.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/2ff9612554db7d599995934eeb3dca9c788ed55a/Week%206/Day%204/Servizio%202/2.JPG) |
 
-Il Conversion Type Split che quantità ha generato per Purchase Type? 
+Il Conversion Type Split che quantità ha generato per Purchase Type? In entrambi i Servizi, "Credito" ha reso di più.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/0a1a5fe7fa28a3f2cc5b05b133d648708703a995/Week%206/Day%204/Servizio%201/4.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/2ff9612554db7d599995934eeb3dca9c788ed55a/Week%206/Day%204/Servizio%202/3.JPG) |
 
-Il Conversion Type Split quanto Revenue ha generato per Purchase Type? 
+Il Conversion Type Split quanto Revenue ha generato per Purchase Type? In entrambi i Servizi, "Credito" ha reso di più.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/0a1a5fe7fa28a3f2cc5b05b133d648708703a995/Week%206/Day%204/Servizio%201/5.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/4.JPG) |
@@ -104,12 +104,12 @@ Il Conversion Type Split quanto Revenue ha generato per Purchase Type? Il Serviz
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/6.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/5.jpg) |
 
-Il Conversion Type Split quanto Revenue potrebbe generare per Purchase Type?
+Il Conversion Type Split quanto Revenue potrebbe generare per Purchase Type? Il Servizio 2 in termini di predizione di Revenue ha meno gap del Servizio 1. 
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/7.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/6.JPG) |
 
-A quanto ammonta in media una Purchase per Purchase Type?
+A quanto ammonta in media una Purchase per Purchase Type? 
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/8.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/7.JPG) |
