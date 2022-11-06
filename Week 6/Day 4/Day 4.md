@@ -109,22 +109,22 @@ Il Conversion Type Split quanto Revenue potrebbe generare per Purchase Type? Il 
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/7.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/6.JPG) |
 
-A quanto ammonta in media una Purchase per Purchase Type? 
+A quanto ammonta in media una Purchase per Purchase Type? La media dei prodotti venduti è simile tra i due Servizi e tra i due mesi, tranne per il fatto che Servizio 2 ha ottenuto una media più bassa ad Agosto.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/8.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/7.JPG) |
 
-Che cosa vendiamo per Abbonamento?
+Che cosa vendiamo per Abbonamento? Entrambi i Servizi sembrano offrire fasce di prezzo simili, con preponderanza di vendite per poche fasce, che quindi potrebbero essere i veri e propri "prodotti base" nel listino. 
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/9.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/8.JPG) |
 
-Che cosa vendiamo per Crediti?
+Che cosa vendiamo per Crediti? Entrambi i Servizi sembrano offrire fasce di prezzo simili, con preponderanza di vendite per poche fasce, che quindi potrebbero essere i veri e propri "prodotti base" nel listino. 
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%201/10.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/14b731202f30d53fb350ecaf328c57c41f1561f7/Week%206/Day%204/Servizio%202/9.JPG) |
 
-Quanta Revenue viene prodotta da un Click Id e a quanti Giorni di Distanza?
+Quanta Revenue viene prodotta da un Click Id e a quanti Giorni di Distanza? Da questa comparazione si evince che il Servizio 1 genera più ritorni di clienti (fidelizzazione), perchè i "null" sono minori.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/11.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/10.JPG) |
@@ -134,17 +134,17 @@ Quanta Revenue viene prodotta da un Click Id e a quanti Giorni di Distanza? (Ver
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/12.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/11.JPG) |
 
-Quanta Revenue viene prodotta in base all'ora di utilizzo nel primo giorno di accesso? A quanti Click Id corrisponde?
+Quanta Revenue viene prodotta in base all'ora di utilizzo nel primo giorno di accesso? A quanti Click Id corrisponde? Qui si dividono per fascia oraria le vendite.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/13.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/12.JPG) |
 
-Quanta Revenue viene prodotta in base all'ora di utilizzo nel primo giorno di accesso? A quanti Click Id corrisponde?
+Quanta Revenue viene prodotta in base all'ora di utilizzo nel primo giorno di accesso? A quanti Click Id corrisponde? Qui la separazione è in macro-fasce orarie.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/14.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/13.JPG) |
 
-Quanta Revenue viene prodotta in base all'ora di utilizzo nel primo giorno di accesso per "purchase_uomo"? A quanti Click Id corrisponde? 
+Quanta Revenue viene prodotta in base all'ora di utilizzo nel primo giorno di accesso per "purchase_uomo"? A quanti Click Id corrisponde? Qui la separazione è in macro-fasce orarie, con focus sulla "purchase_uomo".
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/15.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/14.JPG) |
@@ -159,37 +159,37 @@ Quanta Revenue viene prodotta in base all'ora di utilizzo nell'ultimo giorno di 
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/17.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/16.JPG) |
 
-Studio delle Conversion Type: chi ha fatto cosa?
+Studio delle Conversion Type: chi ha fatto cosa? Schema per visualizzare la Revenue prodotta per mese, giorno, ora.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/18.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/17.JPG) |
 
-Studio delle Conversion Type: Primo e Secondo Giorno
+Studio delle Conversion Type: Primo e Secondo Giorno. Schema per visualizzare la Revenue prodotta per mese, giorno, ora del primo giorno vs  mese, giorno, ora del secondo giorno.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/19.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/18.JPG) |
 
-Studio delle Conversion Type: Primo e Secondo Giorno
+Studio delle Conversion Type: Primo e Secondo Giorno (vista alternativa).
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/20.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/19.JPG) |
 
-Studio delle Conversion Type: ordine storico delle operazioni di un Utente
+Studio delle Conversion Type: ordine storico delle operazioni di un Utente. Caso studio di un utente per capire come le operazioni vengono salvate nel dataset.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/21.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/20.JPG) |
 
-Metriche di Resa (non Revenue)
+Metriche di Resa (non Revenue). Qui si comparano i valori di "Conversion / Click Id", "Revenue / Click Id (univoco)" e "Split / Click Id (univoco)" per comparare i due Servizi in termini di capacità. Il primo esercizio sembra più performante.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/22.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/21.JPG) |
 
-Tutte queste analisi sono state raccolte in 4 Storie (2 per Servizio)
+Tutte queste analisi sono state raccolte in 4 Storie (2 per Servizio: Revenue, Coorte)
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/23.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/22.JPG) |
 
-Pre-Sale + Post-Sale
+Metriche di Resa (non Revenue) con i dataset Pre-Sale e Post-Sale. Qui si comparano i valori di "Conversion / Click Id", "Revenue / Click Id (univoco)" e "Split / Click Id (univoco)" per comparare i due Servizi in termini di capacità. Il primo esercizio sembra più performante.
 | Servizio 1 | Servizio 2 |
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%201/24%20pre+post.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/49c7cfa9c1ca1cee050c5dbe1ae84662e27b11e3/Week%206/Day%204/Servizio%202/23%20pre+post.JPG) |
