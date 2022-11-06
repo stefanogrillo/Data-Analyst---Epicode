@@ -6,7 +6,7 @@ Questi file si basano sull'analisi di due servizi per clienti. L'analisi si foca
 
 [File Servizio 2](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/4d4e6a56d7e36363586662737e4c306b330d5130/Week%206/Day%204/Progetto_Service_2.twb)
 
-### Pre-Lavorazione
+# Pre-Analisi
 
 Vogliamo creare dei campi calcolati che ci serviranno per migliorare la nostra analisi.
 
@@ -60,6 +60,18 @@ Metrica di paragone tra marketplaces/datasets
 COUNT([Conversion Type]) / COUNTD([Click Id])
 ```
 
+8. Revenue / Click Id (univoco)
+Metrica di paragone tra marketplaces/datasets
+```
+SUM([Cast Revenue]) / COUNTD([Click Id])
+```
+
+9. Split / Click Id (univoco)
+Metrica di paragone tra marketplaces/datasets
+```
+SUM(IF [Conversion Type]="split" THEN 1 END) / COUNT([Click Id])
+```
+
 # Analisi 
 
 Il primo passaggio che facciamo nell'analisi è capire quali tipi di _Convesioni_ restituiscono della _Revenue_. Come si può vedere, il Servizio 2 ha più Split, che oltretutto rendono di più.
@@ -77,4 +89,12 @@ Dopodiché, vogliamo osservare quando ci sono stati più Split, per mese. Per en
 | - | - | 
 | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/2ff9612554db7d599995934eeb3dca9c788ed55a/Week%206/Day%204/Servizio%201/3.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/2ff9612554db7d599995934eeb3dca9c788ed55a/Week%206/Day%204/Servizio%202/2.JPG) |
 
-La Revenue che _Split_ rappresenta, da quali   
+La _Split_ quanti click fa per tipologia di prodotto?
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/0a1a5fe7fa28a3f2cc5b05b133d648708703a995/Week%206/Day%204/Servizio%201/4.JPG) | ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/2ff9612554db7d599995934eeb3dca9c788ed55a/Week%206/Day%204/Servizio%202/3.JPG) |
+
+E quanta Revenue si genera per tipologia?
+| Servizio 1 | Servizio 2 |
+| - | - | 
+| ![alt](https://github.com/stefanogrillo/Data-Analyst---Epicode/blob/0a1a5fe7fa28a3f2cc5b05b133d648708703a995/Week%206/Day%204/Servizio%201/5.JPG) | ![alt]() |
