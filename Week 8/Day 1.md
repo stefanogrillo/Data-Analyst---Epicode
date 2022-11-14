@@ -32,5 +32,8 @@ Basandoci su siti di suggerimenti web, da cui poi noi dovremo testare la nostra 
 - [TikTok](https://influencermarketinghub.com/best-times-to-post-on-tiktok/) dovrebbe avere come obiettivo gli orari 6/8am e 8/9pm con uno o due post al giorno.
 - [YouTube](https://influencermarketinghub.com/best-times-to-publish-youtube-videos/), sotto forma di "short", è un repost di TikTok e ne segue gli orari. Per il caricamento di video lunghi si focalizzerebbe sul sabato sera.
 - [Instagram](https://influencermarketinghub.com/best-time-to-post-on-instagram/) offre la possibilità delle "storie", che seguono quanto visto fin qui. Per la creazione di post ci si può appoggiare ai contenuti di Facebook e Twitter (per la parte testuale).
-- 
-- [Twitter]()
+- [Facebook](https://influencermarketinghub.com/best-times-to-post-on-facebook/) richiederebbe come orari indicativi le 9am e la fascia del primo pomeriggio 3pm/4pm. Le "storie" possono seguire gli orari di TikTok, in quanto "ripostaggi".
+- [Twitter](https://sproutsocial.com/insights/best-times-to-post-on-twitter/) richiederebbe l'orario delle 9am.
+
+Viste le specificità sia di stile, che di contenuti, che di users, è necessario identificare qual è la strategia aziendale così da sviluppare in modo coerente tutte le sue sfaccettature nei social adatti. L'obiettivo è creare macro temi per le feste principali, così da rendere più semplice il lavoro (esempio: Halloween, Festa della Repubblica...) o micro-temi dati da argomenti di tendenza (tramite l'analisi dei social). <br>
+L'ideale sarebbe la creazione di almeno un post al giorno per ogni social, dove possibile. 
