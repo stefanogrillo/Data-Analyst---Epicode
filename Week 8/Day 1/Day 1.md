@@ -1,5 +1,7 @@
 # Strawberry S.R.L. 
 
+[La Presentazione è qui]().
+
 <b>Strawberry S.R.L.</b> delega la gestione Social per i suoi punti vendit del canale E-Commerce. L'ambito di vendita: dolci. <br>
 Si vuole creare un account Hootsuite per il controllo dei social aziendali. Qui di seguito definiremo i Team, gli obiettivi e le motodologie.
 
