@@ -25,10 +25,12 @@ La parte di customer care necessita di una persona apposita, in base alla mole d
 ## Strategie Social
 
 ### Campagne
-I piani editoriali si svilupperanno seguendo gli obiettivi del Marketing Funnel: <b>brand awareness</b> (acquisizione nuovi followers con creazione di contenuti da sponsorizzare/condividere), <b>consideration</b> (aumentare la probabilità che i consumatori tengano in considerazione il brand e non i suoi competitors: trovare e rispondere alla domanda latente del user), <b>conversion</b> (aumentare la probabilità che i consumatori tengano in considerazione un determinato brand e i suoi prodotti quando fanno acquisti: spingere all'acquisto), <b>loyalty</b> (). 
+I piani editoriali si svilupperanno seguendo gli obiettivi del Marketing Funnel: <b>brand awareness</b> (acquisizione nuovi followers con creazione di contenuti da sponsorizzare/condividere), <b>consideration</b> (aumentare la probabilità che i consumatori tengano in considerazione il brand e non i suoi competitors: trovare e rispondere alla domanda latente del user), <b>conversion</b> (aumentare la probabilità che i consumatori tengano in considerazione un determinato brand e i suoi prodotti quando fanno acquisti: spingere all'acquisto), <b>loyalty</b> (la fidelizzazione comporta una spesa minore di 5 volte rispetto al costo di attirare un nuovo cliente).
 
-(scoperta della domanda latente), invito alla vendita 
-
-Il team al momento si vuole 
-
-Campagne pubblicitarie multi-social
+E' possibile concentrarsi su diverse fasi del Funnel nello stesso momento? Noi ci proveremo creando due piani editoriali da sostenere in contemporanea, con controlli mensili e scopi ultimi diversi: il primo si focalizza su <b>brand awareness</b>, <b>consideration</b>, e <b>loyalty</b> con la creazione di contenuti comparativi che cerchino la domanda latente. Il secondo piano editoriale riguarda solo il momento della <b>conversion</b>, con lo scopo di aumentarne al massimo le probabilità. <br>
+Basandoci su siti di suggerimenti web, da cui poi noi dovremo testare la nostra specifica situazione, la differenza tra i Social sta nel genere di contenuti e nell'ora di pubblicazione:
+- [TikTok](https://influencermarketinghub.com/best-times-to-post-on-tiktok/) dovrebbe avere come obiettivo gli orari 6/8am e 8/9pm con uno o due post al giorno.
+- [YouTube](https://influencermarketinghub.com/best-times-to-publish-youtube-videos/), sotto forma di "short", è un repost di TikTok e ne segue gli orari. Per il caricamento di video lunghi si focalizzerebbe sul sabato sera.
+- [Instagram](https://influencermarketinghub.com/best-time-to-post-on-instagram/) offre la possibilità delle "storie", che seguono quanto visto fin qui. Per la creazione di post ci si può appoggiare ai contenuti di Facebook e Twitter (per la parte testuale).
+- 
+- [Twitter]()
