@@ -13,7 +13,11 @@ La scelta di non includere o di non sviluppare appieno altri social, tra cui You
 
 ### Team
 Per la creazione del team abbiamo individuato delle aree di interesse: creazione di contenuto, analytics, customer support, gestione team e coordinazione. <br>
-In base al budget dell'azienda, dobbiamo creare un team adeguato. Le competenze richieste (video-making, creazione di contenuto, e gestione) indicano il bisogno di almeno 2 figure professionali: un content creator ed un ruolo multifunzione tra customer care e gestione analytics. zbr>
+In base al budget dell'azienda, dobbiamo creare un team adeguato. Le competenze richieste (video-making, creazione di contenuto, e gestione) indicano il bisogno di almeno 2 figure professionali: un content creator ed un ruolo multifunzione tra customer care e gestione analytics. 
+
+### Team: Ruoli
+In situazione ottimale, il team dovrebbe comprendere dei content creators che si focalizzino per gruppi di social: Facebook, Instagram, TikTok e Youtube possono essere seguiti da una persona con post uniformati, mentre Twitter richiede una attenzione più specifica. La parte di customer care necessita di una persona apposita, in base alla mole di reactions, messaggi diretti e risposte ai post. Per la parte di Analytics sarebbe importante trovare una figura con preparazione adeguata che sia anche in grado di gestire il team.
+
 
 Il team al momento si vuole 
 
