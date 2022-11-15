@@ -11,9 +11,12 @@ Per fare ciò noi proponiamo:
 - <b>Trigger</b> dove i post potranno essere sponsorizzati in base ad un trigger: “se il post raggiunge la soglia di 300 like, il post viene automaticamente sponsorizzato”
 
 Le <b>Metriche</b> che considereremo per controllare il nostro successo nel campo sono:
-- <b>Reach</b> ossia il numero di Persone (Utenti Univoci) che abbiamo raggiunto
-- <b>Frequenza</b> ossia il numero di Impressions / Reaches (quante persone hanno visto il contenuto diviso quante visualizzazioni ha avuto il contenuto)
-- <b>Audience growth rate</b> ossia il numero di Nuovi Followers / Audience * 100 (quanti nuovi followers abbiamo nell'arco temporale diviso il pubblico totale della piattaforma)
+- <b>Reach</b> ossia il numero di Persone (Utenti Univoci) che abbiamo raggiunto (più alta è meglio)
+- <b>Frequenza</b> ossia il numero di Impressions / Reaches (quante persone hanno visto il contenuto diviso quante visualizzazioni ha avuto il contenuto) (meglio sotto il 7)
+- <b>Audience growth rate</b> ossia il numero di Nuovi Followers / Audience * 100 (quanti nuovi followers abbiamo nell'arco temporale diviso il pubblico totale della piattaforma) (più alta è meglio)
+- <b>CPT</b> ossia Click per Thousand (quanto abbiamo speso in Ads diviso le impressioni totali moltiplicato per 1000) (più bassa è meglio)
+- <b>CPC (link al blog)</b> ossia il Costo per Click (quanto abbiamo speso in Ads diviso il numero di Click ricevuti) (più bassa è meglio)
+
   
 ### Brand Attraction
 Per questa fase abbiamo previsto altre attività:
@@ -27,3 +30,5 @@ Le <b>Metriche</b> che considereremo per controllare il nostro successo nel camp
 - <b>Total Reaction / Total Impression della Storia</b> (qual è il numero delle reazioni alla storia diviso il numero di visualizzazioni)
 - <b>Impression Storie/Total Follower</b> (quanto siamo appealing con le nostre storie per i nostri followers?)
 - <b>Numero Condivisione, Like, Comments / Numero Reach</b> (quanto è appealing Il nostro Brand in confronto anche ai non followers, ossia a chiunque abbiamo raggiunto)
+
+### Brand Favorability
