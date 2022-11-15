@@ -25,10 +25,30 @@ Per questa fase abbiamo previsto altre attività:
 - <b>Creazione challenge #strawberryrecipes</b>: realizza la tua ricetta taggaci e usa l’hashtag.
 
 Le <b>Metriche</b> che considereremo per controllare il nostro successo nel campo sono:
-- <b>Average engagement rate</b> ossia il Numero di Likes, Commenti e Shares Totali / Followers Totali (quante reazioni di tutti i tipi sono state fatte sul numero dei followers) 
-- <b>Total Tags/Total Followers<b> ossia il numero totale di Tags / Followers Totali * 100 (quanti tag sono stati creati dai nostri followers?) che corrisponde ad un monitoraggio tramite trigger.
-- <b>Total Reaction / Total Impression della Storia</b> (qual è il numero delle reazioni alla storia diviso il numero di visualizzazioni)
-- <b>Impression Storie/Total Follower</b> (quanto siamo appealing con le nostre storie per i nostri followers?)
-- <b>Numero Condivisione, Like, Comments / Numero Reach</b> (quanto è appealing Il nostro Brand in confronto anche ai non followers, ossia a chiunque abbiamo raggiunto)
+- <b>Average engagement rate</b> ossia il Numero di Likes, Commenti e Shares Totali / Followers Totali (quante reazioni di tutti i tipi sono state fatte sul numero dei followers) (più alta è meglio)
+- <b>Total Tags/Total Followers</b> ossia il numero totale di Tags / Followers Totali * 100 (quanti tag sono stati creati dai nostri followers?) che corrisponde ad un monitoraggio tramite trigger (più alta è meglio)
+- <b>Total Reaction / Total Impression della Storia</b> (qual è il numero delle reazioni alla storia diviso il numero di visualizzazioni) (più alta è meglio)
+- <b>Impression Storie/Total Follower</b> (quanto siamo appealing con le nostre storie per i nostri followers?) (più alta è meglio)
+- <b>Numero Condivisione, Like, Comments / Numero Reach</b> (quanto è appealing Il nostro Brand in confronto anche ai non followers, ossia a chiunque abbiamo raggiunto) (più alta è meglio)
 
 ### Brand Favorability
+Per questa fase abbiamo previsto altre attività:
+- Nel <b>sondaggio</b> proposto nelle storie sul prodotto del mese, proponiamo anche una terza alternativa ovvero “nessuno dei prodotti del mese tra i proposti”
+
+Le <b>Metriche</b> che considereremo per controllare il nostro successo nel campo sono:
+- <b>Followers / Followers dei principali Competitors</b> (quanto è grande la nostra Social Presence in confronto ai nostri principali competitors?) (più alta è meglio)
+- <b>Conteggio di Hashtag e Menzioni del nostro Brand / C.H.M. principali competitors</b> (quanto è grande la nostra Social Presence in confronto ai nostri principali competitors?) (più alta è meglio)
+- <b>Sentiment Analysis</b> (a che emozione positiva o negativa è più correlato il nostro Brand?) (più positiva è meglio)
+- <b>Net Promoter Score</b> (Promotori - Detrattori) / Totale Rispondenti * 100 (più alta è meglio)
+
+### Conversion
+Per questa fase abbiamo previsto altre attività:
+- Fai la storia dei 3 prodotti del mese acquistati e taggaci. Riceverai un gadget (es. Grembiulino)
+- Campagna adv vendita prodotti ecommerce su Facebook e Instagram.
+
+Le <b>Metriche</b> che considereremo per controllare il nostro successo nel campo sono:
+- Vendite prodotti del mese / (followers*numero giorni)
+- Landing page view cost
+- CTR
+- Costo per conversione ( Conversione = visita thankyou page)
+
