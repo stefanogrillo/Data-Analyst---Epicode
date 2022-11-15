@@ -47,8 +47,27 @@ Per questa fase abbiamo previsto altre attività:
 - Campagna adv vendita prodotti ecommerce su Facebook e Instagram.
 
 Le <b>Metriche</b> che considereremo per controllare il nostro successo nel campo sono:
-- Vendite prodotti del mese / (followers*numero giorni)
-- Landing page view cost
-- CTR
-- Costo per conversione ( Conversione = visita thankyou page)
+- <b>Vendite prodotti del mese / (followers * numero giorni)</b> (quanto abbiamo guadagnato per follower al giorno?)
+- <b>Landing page view cost</b> (costo per la visualizzazione della pagina di atterraggio)
+- <b>CTR</b> (Click Through Rate; ossia il totale dei Click diviso il numero totale di Impressions)
+- <b>Costo per conversione</b> (dove Conversione è la visita alla "thankyou" page)
 
+### Inserzioni
+Brand awareness:
+- Rubrica “ricetta della settimana” : 1 post (dai post organici), 1 reel (ig) che rimandano a blog.
+
+Conversione:
+- Vendita prodotti ecommerce : 3 post, 2 reel(ig) che mostrano il prodotto e rimandano all’acquisto nell’ecommerce.
+
+### Team
+- Customer care: 1 persona che risponde alle domande dei clienti dai social nelle conversazioni private 
+- Copywriter : 1 persone risponde ai commenti pubblici delle nostre pagine
+
+### Trend
+Dall’analisi di Google Trends notiamo un incremendo della keyword “torta compleanno donna” per questo abbiamo pensato di inserire nel nostro blog “riecette della settimana” alcune ricette per torte di compleanno dedicate alle donne. 
+
+Dall’analisi di Google Trends notiamo un andamento stagionale della ricerca della keyword “sacher”. Da questo sappiamo che durante il periodo ottobre-maggio valuteremo operazioni di marketing incentrate sulla torta Sacher.
+
+### Hashtag
+Brand: #strawberry #strawberryfacts #strawberryrecipes
+Interesse topic: #foodporn #breakfast #dolcifattiincasa #dolciartigianali #dolciitaliani #dolcifollie #ricettedolci #ricettefacili #ricettedellanonna #merenda #foodvibes #ricettehomemade #healthyfood #yummy
