@@ -1,6 +1,8 @@
 # Day 3: Hootsuite Analytics
 
-[Link](https://docs.google.com/presentation/d/1S2ZNkGD2g51Bk8aDk7A7AdsQ5pqsqWQV9Yy-KAT4n5U/edit?usp=sharing) <br>
+[Link alla Presentazione](https://docs.google.com/presentation/d/1S2ZNkGD2g51Bk8aDk7A7AdsQ5pqsqWQV9Yy-KAT4n5U/edit?usp=sharing) <br>
+[Link alla Dashboard](https://docs.google.com/spreadsheets/d/1Va5mZBbChNu9ZSmNW6CT9Q5ewMHviIIGxoA6MeLt2DQ/edit#gid=888734647) 
+
 Qui di seguito creeremo un report globale in cui presentiamo le Analytics per il punto vendita e per l'E-commerce. <br>
 Dal E-commerce si vede che le vendite sono aumentate. Qui daremo un consglio all'azienda su come aumentare il ROI (return on investment).
 
