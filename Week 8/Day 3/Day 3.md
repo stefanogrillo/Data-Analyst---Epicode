@@ -10,3 +10,4 @@ Vogliamo presentare delle metriche per comprendere l'efficacia dello store fisic
 - Carta Cliente (ci serve per sapere nome, cognome, email dei clienti così da tracciare gli acquisti e saper prevedere i futuri acquisti)
 
 ### Analytics sul E-Commerce
+
